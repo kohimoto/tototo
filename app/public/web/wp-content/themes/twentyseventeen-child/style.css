@@ -1,0 +1,37 @@
+/*
+Theme Name: Twenty Seventeen Child
+Author: the KOHIMOTO
+Author URI: https://kohimoto.com
+Template: twentyseventeen
+*/
+header.site-header {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+header.site-header .header-inner {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+header.site-header .header-menu {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  margin: 25px 0;
+}
+header.site-header .header-logo {
+  /*width: 55%;*/
+  /*float: left;*/
+  /*text-align: right;*/
+}
+header.site-header .header-menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+}
+.home footer {
+  display: none;
+}

@@ -1,0 +1,1 @@
+2018/12/03 03:29:32 [error] 27#0: *18 directory index of "/app/public/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", host: "tototo.local"
