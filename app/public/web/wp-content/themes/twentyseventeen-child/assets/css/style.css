@@ -31,6 +31,10 @@ header li {
   position: fixed;
   top: 10%;
   left: 5%; }
+  .site-cate-list h1 {
+    color: #fff; }
+  .site-cate-list span {
+    background: #000; }
 
 .home footer {
   display: none; }

@@ -27,7 +27,7 @@ get_header(); ?>
     <div class="site-cate-list">
       <?php
       foreach ($categories as $cat_k => $cat_v) {
-        echo '<div class="cate-block"><h1>'.$cat_v->name.'</h1>';
+        echo '<div class="cate-block"><h1><span>'.$cat_v->name.'</sapn></h1>';
         $child_cat_num = count(get_term_children($cat_v->cat_ID,'category'));
         if($child_cat_num > 0){
   			echo '<ul>';
