@@ -36,7 +36,7 @@
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 <?php
 $cnt++;
-$cnt_arr = array("2","9","11","12","15","16");
+$cnt_arr = array("2","9","11","12","16","17");
 $add_class = "";
 if(in_array($cnt, $cnt_arr)) {
   $add_class = "circle_big";
