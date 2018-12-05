@@ -93,8 +93,8 @@ header li {
   overflow: hidden; }
   .home .wrap #primary {
     width: 100%;
-    -webkit-animation: home_wrap 10s linear infinite alternate;
-    animation: home_wrap 10s linear infinite alternate; }
+    -webkit-animation: home_wrap 10s linear infinite;
+    animation: home_wrap 10s linear infinite; }
 
 @-webkit-keyframes home_wrap {
   0% {
