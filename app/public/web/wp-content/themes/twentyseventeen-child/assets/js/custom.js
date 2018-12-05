@@ -16,6 +16,20 @@ $(function(){
   $('.grid-item').height(w);
   var big_w = $('.grid-item.circle_big').width();
   $('.grid-item.circle_big').height(big_w);
+  $(window).resize(function() {
+    var w = $('.grid-item').width();
+    $('.grid-item').height(w);
+    var big_w = $('.grid-item.circle_big').width();
+    $('.grid-item.circle_big').height(big_w);
+
+    var grid = $('.grid');
+    grid.masonry({
+      itemSelector: '.grid-item',
+      //columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+  });
 
 var grid = $('.grid');
 	grid.masonry({
