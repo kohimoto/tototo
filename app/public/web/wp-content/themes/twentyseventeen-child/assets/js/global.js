@@ -10,7 +10,7 @@
 		$navMenuItem = $navigation.find( '.menu-item' ),
 		$menuToggle = $navigation.find( '.menu-toggle' ),
 		$menuScrollDown = $body.find( '.menu-scroll-down' ),
-		$sidebar = $body.find( '#secondary' ),
+		//$sidebar = $body.find( '#secondary' ),
 		$entryContent = $body.find( '.entry-content' ),
 		$formatQuote = $body.find( '.format-quote blockquote' ),
 		isFrontPage = $body.hasClass( 'twentyseventeen-front-page' ) || $body.hasClass( 'home blog' ),
@@ -120,8 +120,8 @@
 			return;
 		}
 
-		sidebarPos       = $sidebar.offset();
-		sidebarPosBottom = sidebarPos.top + ( $sidebar.height() + 28 );
+		//sidebarPos       = $sidebar.offset();
+		//sidebarPosBottom = sidebarPos.top + ( $sidebar.height() + 28 );
 
 		$entryContent.find( param ).each( function() {
 			var $element = $( this ),

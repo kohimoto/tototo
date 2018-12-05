@@ -4,6 +4,47 @@ Author: the KOHIMOTO
 Author URI: https://kohimoto.com
 Template: twentyseventeen
 */
+.grid {
+  overflow: hidden;
+}
+.grid-item {
+   width: 12.5%;
+   height: 120px;
+   float: left;
+   background: #D26;
+   border: 2px solid #333;
+   border-color: hsla(0, 0%, 0%, 0.5);
+   border-radius: 5px;
+}
+.grid-sizer {
+  width: 12.5%;
+}
+.item {
+  display: block;
+  position: absolute;
+  width: 12.5%;
+  /*height: 100px;*/
+  margin: 0px;
+  z-index: 1;
+  background: #000;
+  color: #fff;
+  border-radius: 100%;
+    overflow: hidden;
+}
+.grid-item:nth-child(3n) {
+  width: 25%;
+  height: 480px !important;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 header.site-header {
   position: fixed;
   width: 100%;
@@ -30,11 +71,47 @@ header li {
 .site-cate-list {
   position: fixed;
   top: 10%;
-  left: 5%; }
+  left: 5%;
+  z-index: 2; }
   .site-cate-list h1 {
-    color: #fff; }
+    color: #fff;
+    font-weight: bold; }
+    .site-cate-list h1 a {
+      color: #fff;
+      display: block;
+      cursor: pointer; }
   .site-cate-list span {
-    background: #000; }
+    background: #000;
+    padding: 10px 20px; }
+
+.home .site-content {
+  padding: 0; }
+
+.home .wrap {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0; }
+  .home .wrap #primary {
+    width: 100%; }
+
+.home #main {
+  position: relative; }
+  .home #main .post {
+    /*width: 200px;
+      display: inline-block;
+      margin: 15px 40px;
+      vertical-align: top;
+      height: 250px;*/ }
+    .home #main .post:first-of-type {
+      /*padding-left: 10%;*/ }
+    .home #main .post:nth-child(4n) {
+      /*width: 350px;*/ }
+    .home #main .post .post-thumbnail {
+      padding: 0;
+      margin: 0; }
+      .home #main .post .post-thumbnail img {
+        width: 100%;
+        border-radius: 100%; }
 
 .home footer {
   display: none; }

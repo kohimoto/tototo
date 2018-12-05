@@ -34,14 +34,56 @@ header {
   position: fixed;
   top: 10%;
   left: 5%;
+  z-index: 2;
   h1 {
     color: #fff;
+    font-weight: bold;
+    a {
+      color: #fff;
+      display: block;
+      cursor: pointer;
+    }
   }
   span {
     background: #000;
+    padding: 10px 20px;
   }
 }
 .home{
+  .site-content {
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    padding: 0;
+    #primary {
+      width: 100%;
+    }
+  }
+  #main {
+    position: relative;
+    .post {
+      /*width: 200px;
+      display: inline-block;
+      margin: 15px 40px;
+      vertical-align: top;
+      height: 250px;*/
+      &:first-of-type {
+        /*padding-left: 10%;*/
+      }
+      &:nth-child(4n) {
+        /*width: 350px;*/
+      }
+      .post-thumbnail {
+        padding: 0;
+        margin: 0;
+        img {
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
   footer {
     display: none;
   }

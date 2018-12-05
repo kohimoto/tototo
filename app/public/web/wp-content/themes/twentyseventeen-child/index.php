@@ -18,49 +18,23 @@
 get_header(); ?>
 
 <div class="wrap">
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area grid">
+    <div class="grid-sizer"></div>
     <?php
     $categories = get_categories('parent=0');
     //print_r($categories);
     if(is_array($categories)) {
     ?>
-    <div class="site-cate-list">
-      <?php
-      foreach ($categories as $cat_k => $cat_v) {
-        echo '<div class="cate-block"><h1><span>'.$cat_v->name.'</sapn></h1>';
-        $child_cat_num = count(get_term_children($cat_v->cat_ID,'category'));
-        if($child_cat_num > 0){
-  			echo '<ul>';
-  			//子カテゴリの一覧取得条件
-  			$category_children_args = array('parent'=>$cat_v->cat_ID);
-  			//子カテゴリの一覧取得
-  			$category_children = get_categories($category_children_args);
-  			//子カテゴリの数だけリスト出力
-  			foreach($category_children as $child_val){
-  				$cat_link = get_category_link($child_val -> cat_ID);
-  				echo '<li><a href="' . $cat_link . '">' . $child_val -> name . '</a>';
-  			}
-  			echo '</ul>';
-  		}
-      ?>
-      </div>
-      <?php
-      }
-      ?>
-      <?php
-      ?>
-
-    </div>
     <?php
     }
     ?>
-		<main id="main" class="site-main" role="main">
 
 			<?php
 			if ( have_posts() ) :
-
+$cnt = 0;
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
+        $cnt++;
 
 					/*
 					 * Include the Post-Format-specific template for the content.
@@ -91,7 +65,18 @@ get_header(); ?>
 			endif;
 			?>
 
-		</main><!-- #main -->
 	</div><!-- #primary -->
+  <div class="entry-content">
+    <?php
+    wp_link_pages( array(
+      'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+      'after'       => '</div>',
+      'link_before' => '<span class="page-number">',
+      'link_after'  => '</span>',
+    ) );
+    ?>
+  </div><!-- .entry-content -->
+
+
 </div><!-- .wrap -->
 <?php get_footer();
