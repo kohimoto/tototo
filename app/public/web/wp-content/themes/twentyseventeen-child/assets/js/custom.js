@@ -47,5 +47,20 @@ $(function(){
     });
 
   });
+  var timer = false;
+  // ** header **//
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $('.site-header').addClass("dispNone");
+      if( timer !== false ){
+        clearTimeout( timer );
+      }
+      timer = setTimeout(function(){
+        $('.site-header').removeClass("dispNone");
+      },2000 );
+    } else {
+      $('.site-header').removeClass("dispNone");
+    }
+  });
 
 });
