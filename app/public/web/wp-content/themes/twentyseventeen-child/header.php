@@ -28,7 +28,7 @@
 
   <header id="masthead" class="site-header" role="banner">
     <div class="header-inner">
-      <div class="header-logo"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.png"></div>
+      <h1><svg class="header-logo"><use xlink:href="#logo"></use></svg></h1>
       <ul class="header-menu">
         <li><a href="/">TOP</a></li>
         <li><a href="/about">ABOUT</a></li>

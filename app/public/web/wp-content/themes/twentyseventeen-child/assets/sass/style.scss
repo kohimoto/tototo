@@ -4,6 +4,13 @@ Author: the KOHIMOTO
 Author URI: https://kohimoto.com
 Template: twentyseventeen
 */
+html{
+  font-size: 20px;
+}
+.svg_org {
+    display: none;
+}
+
 
 header {
   &.site-header {
@@ -11,18 +18,28 @@ header {
     width: 100%;
     bottom: 0;
     z-index: 2;
+    background-color: #fff;
   }
   .header-inner {
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
     position: relative;
+    h1 {
+      line-height: 0;
+      margin: 0.8rem 0;
+      .header-logo {
+        width: 100px;
+        height: 40px;
+        fill: #240a26;
+      }
+    }
   }
   .header-menu {
     position: absolute;
     right: 10%;
     top: 0;
-    margin: 25px 0;
+    margin: 0;
   }
   li {
     display: inline-block;
@@ -102,18 +119,23 @@ header {
        top: 1%;
        left: 0%;
       }
-      30% {
+      25% {
         top: 0%;
         left: 1%;
       }
-      60% {
+      50% {
         top: -1%;
         left: 0;
       }
-      100% {
+      75% {
         top: 0%;
         left: -1%;
       }
+      100% {
+        top: 1%;
+        left: 0%;
+      }
+
     }
   }
   #main {
