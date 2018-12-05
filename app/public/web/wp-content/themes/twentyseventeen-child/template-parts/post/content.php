@@ -34,8 +34,16 @@
   ?>
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
-
-		<div class="post-thumbnail grid-item">
+<?php
+$cnt++;
+$cnt_arr = array("2","9","11","12","15","16");
+$add_class = "";
+if(in_array($cnt, $cnt_arr)) {
+  $add_class = "circle_big";
+}
+  $check_cnt = "circle_no_".$cnt;
+?>
+		<div class="post-thumbnail grid-item <?php echo $add_class;?> <?php echo $check_cnt;?>">
       <div class="item-content">
 			<a href="<?php the_permalink(); ?>">
 				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
