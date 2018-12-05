@@ -1,0 +1,84 @@
+/*
+Theme Name: Twenty Seventeen Child
+Author: the KOHIMOTO
+Author URI: https://kohimoto.com
+Template: twentyseventeen
+*/
+header.site-header {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2; }
+
+header .header-inner {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative; }
+
+header .header-menu {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  margin: 25px 0; }
+
+header li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px; }
+
+.site-cate-list {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 2; }
+  .site-cate-list h1 {
+    color: #fff;
+    font-weight: bold; }
+    .site-cate-list h1 a {
+      color: #fff;
+      display: block;
+      cursor: pointer; }
+  .site-cate-list span {
+    background: #000;
+    padding: 10px 20px; }
+
+.home .site-content {
+  padding: 0; }
+
+.home .wrap {
+  max-width: 100%;
+  padding: 0; }
+  .home .wrap #primary {
+    width: 100%; }
+
+.home #main {
+  position: relative;
+  display: grid;
+  grid-template-rows: 17% 17% 17%;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  width: 100%; }
+  .home #main .post {
+    width: 200px;
+    margin: 0 auto;
+    /*display: inline-block;*/
+    /*margin: 15px 40px;*/
+    /*vertical-align: top;*/
+    /*height: 300px;*/ }
+    .home #main .post:first-of-type {
+      /*margin-left: 100px;
+        margin: 15px 40px 15px 300px;*/
+      grid-column-start: 2; }
+    .home #main .post:nth-child(4n) {
+      width: 350px;
+      grid-row: span 2;
+      margin: 20% 0; }
+    .home #main .post .post-thumbnail {
+      padding: 0;
+      margin: 0; }
+      .home #main .post .post-thumbnail img {
+        width: 100%;
+        border-radius: 100%; }
+
+.home footer {
+  display: none; }
