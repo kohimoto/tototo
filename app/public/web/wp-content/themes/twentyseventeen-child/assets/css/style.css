@@ -7,6 +7,11 @@ Template: twentyseventeen
 html {
   font-size: 20px; }
 
+body {
+  font-family: 'Khula', kozuka-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
 .svg_org {
   display: none; }
 
@@ -45,12 +50,14 @@ header .header-menu {
   position: absolute;
   right: 10%;
   top: 0;
-  margin: 0; }
+  margin: 1.2rem 0; }
 
 header li {
   display: inline-block;
   list-style: none;
-  padding: 0 20px; }
+  padding: 0 20px;
+  font-size: 1.2rem;
+  line-height: 1; }
 
 .site-cate-list {
   position: fixed;
@@ -107,8 +114,7 @@ header li {
   overflow: hidden; }
   .home .wrap #primary {
     width: 100%;
-    -webkit-animation: home_wrap 10s linear infinite;
-    animation: home_wrap 10s linear infinite; }
+    /*animation: home_wrap 10s linear infinite;*/ }
 
 @-webkit-keyframes home_wrap {
   0% {

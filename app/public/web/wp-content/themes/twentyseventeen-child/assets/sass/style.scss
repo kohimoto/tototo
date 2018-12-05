@@ -7,6 +7,11 @@ Template: twentyseventeen
 html{
   font-size: 20px;
 }
+body {
+  font-family: 'Khula', kozuka-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .svg_org {
     display: none;
 }
@@ -50,12 +55,14 @@ header {
     position: absolute;
     right: 10%;
     top: 0;
-    margin: 0;
+    margin: 1.2rem 0;
   }
   li {
     display: inline-block;
     list-style: none;
     padding: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1;
   }
 }
 .site-cate-list {
@@ -123,7 +130,7 @@ header {
     overflow: hidden;
     #primary {
       width: 100%;
-      animation: home_wrap 10s linear infinite;
+      /*animation: home_wrap 10s linear infinite;*/
     }
     @keyframes home_wrap {
       0% {
