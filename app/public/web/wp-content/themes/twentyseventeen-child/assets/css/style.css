@@ -43,6 +43,9 @@ header li {
     background: #000;
     padding: 10px 20px; }
 
+.navigation .nav-links a {
+  color: transparent; }
+
 .grid {
   overflow: hidden; }
   .grid .grid-item {
