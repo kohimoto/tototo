@@ -51,6 +51,45 @@
 		echo '</div><!-- .single-featured-image-header -->';
 	endif;
 	?>
+  <?php
+  if ( is_front_page() && is_home() ) {
+  ?>
+  <?php
+  $categories = get_categories('parent=0');
+  //print_r($categories);
+  if(is_array($categories)) {
+  ?>
+  <div class="site-cate-list">
+    <?php
+    foreach ($categories as $cat_k => $cat_v) {
+      echo '<div class="cate-block"><h1><a><span>'.$cat_v->name.'</span></a></h1>';
+      $child_cat_num = count(get_term_children($cat_v->cat_ID,'category'));
+      if($child_cat_num > 0){
+      echo '<ul>';
+      //子カテゴリの一覧取得条件
+      $category_children_args = array('parent'=>$cat_v->cat_ID);
+      //子カテゴリの一覧取得
+      $category_children = get_categories($category_children_args);
+      //子カテゴリの数だけリスト出力
+      foreach($category_children as $child_val){
+        $cat_link = get_category_link($child_val -> cat_ID);
+        echo '<li><a href="' . $cat_link . '">' . $child_val -> name . '</a>';
+      }
+      echo '</ul>';
+    }
+    ?>
+    </div>
+    <?php
+    }
+    ?>
+    <?php
+    ?>
+
+  </div>
+  <?php
+    }
+  }
+  ?>
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
