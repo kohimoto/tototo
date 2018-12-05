@@ -62,9 +62,15 @@ header {
      width: 12.5%;
      float: left;
      padding: 1%;
+     margin-bottom: 0;
      img {
        border-radius: 100%;
        overflow: hidden;
+       transition: all 0.8s;
+       &:hover {
+         border-radius: 0;
+         transform: scale(1.1, 1.1);
+       }
      }
   }
   .grid-sizer {
@@ -86,8 +92,28 @@ header {
   .wrap {
     max-width: 100%;
     padding: 0;
+    overflow: hidden;
     #primary {
       width: 100%;
+      animation: home_wrap 10s linear infinite alternate;
+    }
+    @keyframes home_wrap {
+      0% {
+       top: 1%;
+       left: 0%;
+      }
+      30% {
+        top: 0%;
+        left: 1%;
+      }
+      60% {
+        top: -1%;
+        left: 0;
+      }
+      100% {
+        top: 0%;
+        left: -1%;
+      }
     }
   }
   #main {
