@@ -43,13 +43,13 @@ if(in_array($cnt, $cnt_arr)) {
 }
   $check_cnt = "circle_no_".$cnt;
 ?>
-		<div class="post-thumbnail grid-item <?php echo $add_class;?> <?php echo $check_cnt;?>">
+		<div class="post-thumbnail grid-item circle-disp <?php echo $add_class;?> <?php echo $check_cnt;?>">
       <div class="item-content">
 			<a href="<?php the_permalink(); ?>">
 				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
 			</a>
     </div>
-		</div><!-- .post-thumbnail -->
+		</div>
 	<?php endif; ?>
 
 	<?php
