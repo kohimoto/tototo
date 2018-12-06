@@ -282,7 +282,8 @@ header li {
     width: 12.5%;
     float: left;
     padding: 1%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    /*height: 300px;*/ }
     .grid .grid-item img {
       border-radius: 100%;
       overflow: hidden;
@@ -297,7 +298,8 @@ header li {
   .grid .grid-sizer {
     width: 12.5%; }
   .grid .grid-item.circle_big {
-    width: 25%; }
+    width: 25%;
+    /*height: 600px;*/ }
   .grid .grid:after {
     content: '';
     display: block;

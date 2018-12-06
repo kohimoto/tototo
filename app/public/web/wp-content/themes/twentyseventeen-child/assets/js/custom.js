@@ -25,6 +25,11 @@ $(function(){
   		loadingText: ''
   	},
     function(new_elts) {
+      var w = $('.grid-item').width();
+      $('.grid-item').height(w);
+      var big_w = $('.grid-item.circle_big').width();
+      $('.grid-item.circle_big').height(big_w);
+
   		var elts = $(new_elts).css('opacity', 0);
 
   		elts.animate({opacity: 1});
