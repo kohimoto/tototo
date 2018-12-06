@@ -4,6 +4,72 @@ Author: the KOHIMOTO
 Author URI: https://kohimoto.com
 Template: twentyseventeen
 */
+
+
+
+/* =======================================================
+* reset
+* ======================================================= */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+  box-sizing:border-box;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+  box-sizing:border-box;
+}
+ul{
+  list-style:none;
+}
+a {
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  box-sizing:border-box;
+}
+a:focus, *:focus {
+  outline:none;
+}
+a:hover {
+  opacity: 0.9;
+}
+input, select {
+  vertical-align:middle;
+}
+/* =======================================================
+* original
+* ======================================================= */
+.center_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+/* =======================================================
+* common
+* ======================================================= */
+
 html{
   font-size: 20px;
 }
@@ -67,6 +133,10 @@ a:focus,
   }
 }
 
+/* =======================================================
+* header
+* ======================================================= */
+
 header {
   &.site-header {
     position: fixed;
@@ -118,6 +188,15 @@ header {
     }
   }
 }
+
+
+
+
+/* =======================================================
+* top
+* ======================================================= */
+
+
 .site-cate-list {
   position: fixed;
   top: 2rem;
@@ -184,6 +263,7 @@ header {
     }
   }
 }
+
 .navigation {
   .nav-links {
     a {
