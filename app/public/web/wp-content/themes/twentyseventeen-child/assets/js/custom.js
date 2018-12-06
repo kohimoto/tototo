@@ -48,7 +48,9 @@ $(function(){
 
   });
   var timer = false;
+
   // ** header **//
+
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $('.site-header').addClass("dispNone");
@@ -62,5 +64,15 @@ $(function(){
       $('.site-header').removeClass("dispNone");
     }
   });
+
+  // ** menu **//
+  $(".cate-block h1").hover(
+    function () {
+      $('.site-cate-list').addClass('open');
+    },
+    function () {
+      $('.site-cate-list').removeClass('open');
+    }
+  );
 
 });
