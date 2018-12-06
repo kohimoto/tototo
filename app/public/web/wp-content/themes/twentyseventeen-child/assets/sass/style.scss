@@ -91,7 +91,7 @@ a:focus,
 .mask {
   overflow:hidden;
 }
-.mask:after,.pickup-wrap a:after{
+.mask:after{
   top:0;
   left:0;
   content:'';
@@ -99,17 +99,12 @@ a:focus,
 .mask,.mask:after{
   display:inline-block;
 }
-.mask-txt.mask-txt-smaregi:after{
-  background:#0084cf;
-}
-.mask-txt.mask-txt-timecard:after{
-  background:#7BB829;
-}
 .mask{
   position:relative;
 }
 .mask:after{
   position:absolute;width:100%;height:100%;background:#000;transform:scaleX(0) translateX(0);transform-origin:left;z-index:10;
+
 }
 .mask.is-show:after{
   animation:openMask .5s cubic-bezier(.895,.03,.685,.22) 0s alternate forwards,
@@ -203,19 +198,14 @@ header {
   left: 0;
   margin-left:2rem;
   z-index: 2;
-  h1 {
-    color: #fff;
+  h2 {
     font-weight: bold;
     margin: 0;
+    font-size: 2rem;
     a {
       color: #fff;
       display: block;
       cursor: pointer;
-    }
-  }
-  &.open {
-  /*  background: rgba(0,0,0,0.5);*/
-    .cate_child {
     }
   }
   .cate-block{
