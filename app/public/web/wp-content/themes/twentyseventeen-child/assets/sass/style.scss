@@ -258,19 +258,15 @@ header {
   }
 }
 .site-cate-list.open {
-  .cate-block {
-    h2 {
-      transition: transform 0.8s;
-      transform: translateX(-140%);
-    }
-    .cate-block.open_cate {
-      transform: translateX(0%);
-    }
-  }
-  h2 {
-    transition: transform 0.5s;
-    transform: translateX(-140%);
-  }
+ .cate-block.open_cate {
+   .cate_child {
+     transform: translateX(0%);
+   }
+ }
+ h2 {
+   transition: transform 0.5s;
+   transform: translateX(-140%);
+ }
 }
 .pagenavi {
   display: none;
