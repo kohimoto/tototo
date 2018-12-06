@@ -48,7 +48,7 @@ a:focus, *:focus {
   outline:none;
 }
 a:hover {
-  opacity: 0.9;
+  /*opacity: 0.9;*/
 }
 input, select {
   vertical-align:middle;
@@ -180,6 +180,11 @@ header {
     line-height: 1;
     a {
       line-height: 1;
+      span {
+        line-height: 1;
+        vertical-align: bottom;
+        padding: 5px 10px 0;
+      }
     }
   }
 }
@@ -255,7 +260,7 @@ header {
 .site-cate-list.open {
   .cate-block {
     h2 {
-      transition: transform 0.5s;
+      transition: transform 0.8s;
       transform: translateX(-140%);
     }
     .cate_child {
