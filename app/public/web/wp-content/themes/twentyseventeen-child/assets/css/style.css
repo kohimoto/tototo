@@ -242,7 +242,7 @@ header li {
         -o-transition: all 0.5s;
         transition: all 0.5s; }
         .site-cate-list .cate-block .cate_child li:hover {
-          padding: 1rem 3.5rem;
+          padding: 1rem 2rem;
           border-radius: 0 80px 80px 0; }
         .site-cate-list .cate-block .cate_child li a {
           padding: 0 3rem;
