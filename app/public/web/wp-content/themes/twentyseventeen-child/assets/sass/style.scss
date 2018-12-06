@@ -200,6 +200,7 @@ header {
   z-index: 2;
   .cate-block{
     /*position: relative;*/
+
     h2 {
       font-weight: bold;
       margin: 0;
@@ -208,11 +209,6 @@ header {
         color: #fff;
         display: block;
         cursor: pointer;
-      }
-      &:hover +.cate_child {
-        -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        transform: translateX(0%);
       }
     }
 
@@ -232,11 +228,16 @@ header {
       transition: -webkit-transform 0.5s;
       -o-transition: transform 0.5s;
       transition: transform 0.5s;
-      /*transform: translateX(-100%);*/
+      transform: translateX(-100%);
       background: rgba(0,0,0,0.8);
       padding: 1.7rem 0;
       li {
-         font-size: 2rem;
+          font-size: 2rem;
+          transition: all 0.5s;
+         &:hover {
+           padding: 1rem 3.5rem;
+           border-radius: 0 80px 80px 0;
+         }
         a {
           padding: 0 3rem;
           color: #fff;
@@ -254,10 +255,11 @@ header {
 .site-cate-list.open {
   .cate-block {
     h2 {
-
+      transition: transform 0.5s;
+      transform: translateX(-140%);
     }
     .cate_child {
-
+      transform: translateX(0%);
     }
   }
 }
