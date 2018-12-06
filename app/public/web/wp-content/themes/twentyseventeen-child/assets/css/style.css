@@ -10,7 +10,8 @@ html {
 body {
   font-family: 'Khula', kozuka-gothic-pro, sans-serif;
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  letter-spacing: 0.05rem; }
 
 a:focus,
 *:focus {
@@ -22,14 +23,6 @@ a:focus,
 .mask {
   overflow: hidden; }
 
-/*
-.mask-img.is-show img,.mask-txt.is-show,.mask-video.is-show iframe{
-  animation:showElm .3s cubic-bezier(.165,.84,.44,1) .4s forwards;
-}
-.mask-img img,.mask-txt,.mask-video iframe{
-  opacity:0;
-}
-*/
 .mask:after, .pickup-wrap a:after {
   top: 0;
   left: 0;
@@ -139,11 +132,14 @@ header li {
   padding: 0 20px;
   font-size: 1.2rem;
   line-height: 1; }
+  header li a {
+    line-height: 1; }
 
 .site-cate-list {
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 2rem;
+  left: 0;
+  margin-left: 2rem;
   z-index: 2;
   height: 100vh;
   width: 17%; }
@@ -161,8 +157,9 @@ header li {
     position: relative;
     overflow: hidden; }
     .site-cate-list .cate-block span {
-      background: #000;
-      padding: 10px 20px; }
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 18px 20px 10px;
+      line-height: 1; }
     .site-cate-list .cate-block ul {
       padding: 20px 0; }
       .site-cate-list .cate-block ul li {
@@ -180,20 +177,10 @@ header li {
         background: rgba(0, 0, 0, 0.5); }
         .site-cate-list .cate-block ul li a {
           padding: 0 50px; }
-    .site-cate-list .cate-block.cate_works {
-      position: absolute;
-      top: 10%;
-      left: 0%; }
-      .site-cate-list .cate-block.cate_works h1 {
-        padding: 0px 50px; }
-        .site-cate-list .cate-block.cate_works h1:hover + .cate_child li {
-          -webkit-transform: translateX(0%);
-          -ms-transform: translateX(0%);
-          transform: translateX(0%); }
-    .site-cate-list .cate-block.cate_news {
-      position: absolute;
-      top: 18%;
-      left: 15%; }
+    .site-cate-list .cate-block.cate_works h1:hover + .cate_child li {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%); }
 
 .navigation .nav-links a {
   color: transparent; }

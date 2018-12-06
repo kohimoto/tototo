@@ -40,7 +40,7 @@
     <div class="header-inner">
       <h1><svg class="header-logo"><use xlink:href="#logo"></use></svg></h1>
       <ul class="header-menu">
-        <li><a href="/"><span class="mask">TOP</span></a></li>
+        <li><a href="/">TOP</a></li>
         <li><a href="/about">ABOUT</a></li>
         <li><a href="/shop">SHOP</a></li>
         <li><a href="/contact">CONTACT</a></li>
@@ -75,7 +75,7 @@
       $cat_link = get_category_link($cat_v -> cat_ID);
       $cat_slug = $cat_v -> category_nicename;
       $add_class = "cate_".$cat_slug;
-      echo '<div class="cate-block '.$add_class.'"><h1><a href="' . $cat_link . '" class="'. $cat_slug.'"><span>'.$cat_v->name.'</span></a></h1>';
+      echo '<div class="cate-block '.$add_class.'"><h1><a href="' . $cat_link . '" class="'. $cat_slug.'"><span class="mask is-show">'.$cat_v->name.'</span></a></h1>';
       $child_cat_num = count(get_term_children($cat_v->cat_ID,'category'));
       if($child_cat_num > 0){
       echo '<ul class="cate_child">';
