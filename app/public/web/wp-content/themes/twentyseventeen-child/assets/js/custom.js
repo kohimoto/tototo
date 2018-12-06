@@ -66,7 +66,7 @@ $(function(){
   });
 
   // ** menu **//
-  $(".cate-block h1").hover(
+  $(".cate-block h2").hover(
     function () {
       $('.site-cate-list').addClass('open');
     },
