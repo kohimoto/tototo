@@ -253,7 +253,7 @@ header {
   }
 }
 .site-cate-list.open {
-  .cate-block {
+  .cate-block.open_cate {
     h2 {
       transition: transform 0.5s;
       transform: translateX(-140%);

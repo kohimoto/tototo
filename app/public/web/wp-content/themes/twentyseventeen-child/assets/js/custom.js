@@ -74,9 +74,11 @@ $(function(){
   $(".cate-block").hover(
     function () {
       $('.site-cate-list').addClass('open');
+      $(this).addClass('open_cate');
     },
     function () {
       $('.site-cate-list').removeClass('open');
+      $(this).removeClass('open_cate');
     }
   );
 
