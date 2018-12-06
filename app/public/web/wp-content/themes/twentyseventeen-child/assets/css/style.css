@@ -19,6 +19,83 @@ a:focus,
 .svg_org {
   display: none; }
 
+.mask {
+  overflow: hidden; }
+
+/*
+.mask-img.is-show img,.mask-txt.is-show,.mask-video.is-show iframe{
+  animation:showElm .3s cubic-bezier(.165,.84,.44,1) .4s forwards;
+}
+.mask-img img,.mask-txt,.mask-video iframe{
+  opacity:0;
+}
+*/
+.mask:after, .pickup-wrap a:after {
+  top: 0;
+  left: 0;
+  content: ''; }
+
+.mask, .mask:after {
+  display: inline-block; }
+
+.mask-txt.mask-txt-smaregi:after {
+  background: #0084cf; }
+
+.mask-txt.mask-txt-timecard:after {
+  background: #7BB829; }
+
+.mask {
+  position: relative; }
+
+.mask:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transform: scaleX(0) translateX(0);
+  -ms-transform: scaleX(0) translateX(0);
+  transform: scaleX(0) translateX(0);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  z-index: 10; }
+
+.mask.is-show:after {
+  -webkit-animation: openMask 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s alternate forwards, closeMask 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s alternate forwards;
+  animation: openMask 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s alternate forwards, closeMask 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s alternate forwards; }
+
+@-webkit-keyframes openMask {
+  0% {
+    -webkit-transform: scaleX(0) translateX(0);
+    transform: scaleX(0) translateX(0); }
+  100% {
+    -webkit-transform: scaleX(1) translateX(0);
+    transform: scaleX(1) translateX(0); } }
+
+@keyframes openMask {
+  0% {
+    -webkit-transform: scaleX(0) translateX(0);
+    transform: scaleX(0) translateX(0); }
+  100% {
+    -webkit-transform: scaleX(1) translateX(0);
+    transform: scaleX(1) translateX(0); } }
+
+@-webkit-keyframes closeMask {
+  0% {
+    -webkit-transform: scaleX(1) translateX(0);
+    transform: scaleX(1) translateX(0); }
+  100% {
+    -webkit-transform: scaleX(1) translateX(101%);
+    transform: scaleX(1) translateX(101%); } }
+
+@keyframes closeMask {
+  0% {
+    -webkit-transform: scaleX(1) translateX(0);
+    transform: scaleX(1) translateX(0); }
+  100% {
+    -webkit-transform: scaleX(1) translateX(101%);
+    transform: scaleX(1) translateX(101%); } }
+
 header.site-header {
   position: fixed;
   width: 100%;
