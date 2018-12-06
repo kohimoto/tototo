@@ -20,9 +20,13 @@ $(function(){
 
   		// Selector of items to retrieve
   		itemSelector: '.grid-item',
-
-  		// Loading message
-  		loadingText: ''
+      loading: {
+  		  // Loading message
+  		  loadingText: '',
+        // Finish message
+        finishedMsg: ' ',
+        donetext : ' '
+      }
   	},
     function(new_elts) {
       var w = $('.grid-item').width();
@@ -74,9 +78,11 @@ $(function(){
   $(".cate-block").hover(
     function () {
       $('.site-cate-list').addClass('open');
+      $(this).addClass('open_cate');
     },
     function () {
       $('.site-cate-list').removeClass('open');
+      $(this).removeClass('open_cate');
     }
   );
 
