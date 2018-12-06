@@ -22,7 +22,7 @@ $(function(){
   		itemSelector: '.grid-item',
 
   		// Loading message
-  		loadingText: 'Loading new items…'
+  		loadingText: ''
   	},
     function(new_elts) {
   		var elts = $(new_elts).css('opacity', 0);
@@ -66,7 +66,7 @@ $(function(){
   });
 
   // ** menu **//
-  $(".cate-block").hover(
+  $(".cate-block h2").hover(
     function () {
       $('.site-cate-list').addClass('open');
     },

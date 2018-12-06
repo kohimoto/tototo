@@ -270,6 +270,9 @@ header li {
   -ms-transform: translateX(0%);
   transform: translateX(0%); }
 
+.pagenavi {
+  display: none; }
+
 .navigation .nav-links a {
   color: transparent; }
 
