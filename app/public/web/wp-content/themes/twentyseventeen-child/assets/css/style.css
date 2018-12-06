@@ -255,7 +255,12 @@ header li {
             letter-spacing: 0.5rem;
             font-size: 3rem; }
 
-.site-cate-list.open .cate-block.open_cate h2 {
+.site-cate-list.open .cate-block.open_cate .cate_child {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%); }
+
+.site-cate-list.open h2 {
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
@@ -264,11 +269,6 @@ header li {
   -webkit-transform: translateX(-140%);
   -ms-transform: translateX(-140%);
   transform: translateX(-140%); }
-
-.site-cate-list.open .cate-block.open_cate .cate_child {
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%); }
 
 .pagenavi {
   display: none; }

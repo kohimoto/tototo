@@ -254,13 +254,13 @@ header {
 }
 .site-cate-list.open {
   .cate-block.open_cate {
-    h2 {
-      transition: transform 0.5s;
-      transform: translateX(-140%);
-    }
     .cate_child {
       transform: translateX(0%);
     }
+  }
+  h2 {
+    transition: transform 0.5s;
+    transform: translateX(-140%);
   }
 }
 .pagenavi {
