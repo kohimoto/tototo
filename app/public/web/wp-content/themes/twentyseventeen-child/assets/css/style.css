@@ -4,11 +4,27 @@ Author: the KOHIMOTO
 Author URI: https://kohimoto.com
 Template: twentyseventeen
 */
+html {
+  font-size: 20px; }
+
+body {
+  font-family: 'Khula', kozuka-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+a:focus,
+*:focus {
+  outline: none; }
+
+.svg_org {
+  display: none; }
+
 header.site-header {
   position: fixed;
   width: 100%;
   bottom: 0;
   z-index: 2;
+  background-color: #fff;
   -webkit-transition: transform 0.5s;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -26,17 +42,26 @@ header .header-inner {
   text-align: center;
   overflow: hidden;
   position: relative; }
+  header .header-inner h1 {
+    line-height: 0;
+    margin: 0.8rem 0; }
+    header .header-inner h1 .header-logo {
+      width: 100px;
+      height: 40px;
+      fill: #240a26; }
 
 header .header-menu {
   position: absolute;
   right: 10%;
   top: 0;
-  margin: 25px 0; }
+  margin: 1.2rem 0; }
 
 header li {
   display: inline-block;
   list-style: none;
-  padding: 0 20px; }
+  padding: 0 20px;
+  font-size: 1.2rem;
+  line-height: 1; }
 
 .site-cate-list {
   position: fixed;
@@ -106,9 +131,9 @@ header li {
     .grid .grid-item img {
       border-radius: 100%;
       overflow: hidden;
-      -webkit-transition: all 0.8s;
-      -o-transition: all 0.8s;
-      transition: all 0.8s; }
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s; }
       .grid .grid-item img:hover {
         border-radius: 0;
         -webkit-transform: scale(1.1, 1.1);
@@ -132,36 +157,41 @@ header li {
   overflow: hidden; }
   .home .wrap #primary {
     width: 100%;
-    -webkit-animation: home_wrap 10s linear infinite;
-    animation: home_wrap 10s linear infinite; }
+    /*animation: home_wrap 10s linear infinite;*/ }
 
 @-webkit-keyframes home_wrap {
   0% {
     top: 1%;
     left: 0%; }
-  30% {
+  25% {
     top: 0%;
     left: 1%; }
-  60% {
+  50% {
     top: -1%;
     left: 0; }
-  100% {
+  75% {
     top: 0%;
-    left: -1%; } }
+    left: -1%; }
+  100% {
+    top: 1%;
+    left: 0%; } }
 
 @keyframes home_wrap {
   0% {
     top: 1%;
     left: 0%; }
-  30% {
+  25% {
     top: 0%;
     left: 1%; }
-  60% {
+  50% {
     top: -1%;
     left: 0; }
-  100% {
+  75% {
     top: 0%;
-    left: -1%; } }
+    left: -1%; }
+  100% {
+    top: 1%;
+    left: 0%; } }
 
 .home #main {
   position: relative; }

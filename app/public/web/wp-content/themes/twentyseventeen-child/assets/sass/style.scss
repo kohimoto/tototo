@@ -4,6 +4,22 @@ Author: the KOHIMOTO
 Author URI: https://kohimoto.com
 Template: twentyseventeen
 */
+html{
+  font-size: 20px;
+}
+body {
+  font-family: 'Khula', kozuka-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+a:focus,
+*:focus {
+  outline:none;
+}
+.svg_org {
+    display: none;
+}
+
 
 header {
   &.site-header {
@@ -11,6 +27,7 @@ header {
     width: 100%;
     bottom: 0;
     z-index: 2;
+    background-color: #fff;
     -webkit-transition: transform 0.5s;
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
@@ -28,17 +45,28 @@ header {
     text-align: center;
     overflow: hidden;
     position: relative;
+    h1 {
+      line-height: 0;
+      margin: 0.8rem 0;
+      .header-logo {
+        width: 100px;
+        height: 40px;
+        fill: #240a26;
+      }
+    }
   }
   .header-menu {
     position: absolute;
     right: 10%;
     top: 0;
-    margin: 25px 0;
+    margin: 1.2rem 0;
   }
   li {
     display: inline-block;
     list-style: none;
     padding: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1;
   }
 }
 .site-cate-list {
@@ -129,7 +157,7 @@ header {
      img {
        border-radius: 100%;
        overflow: hidden;
-       transition: all 0.8s;
+       transition: all 0.6s;
        &:hover {
          border-radius: 0;
          transform: scale(1.1, 1.1);
@@ -158,25 +186,30 @@ header {
     overflow: hidden;
     #primary {
       width: 100%;
-      animation: home_wrap 10s linear infinite;
+      /*animation: home_wrap 10s linear infinite;*/
     }
     @keyframes home_wrap {
       0% {
        top: 1%;
        left: 0%;
       }
-      30% {
+      25% {
         top: 0%;
         left: 1%;
       }
-      60% {
+      50% {
         top: -1%;
         left: 0;
       }
-      100% {
+      75% {
         top: 0%;
         left: -1%;
       }
+      100% {
+        top: 1%;
+        left: 0%;
+      }
+
     }
   }
   #main {
