@@ -20,9 +20,13 @@ $(function(){
 
   		// Selector of items to retrieve
   		itemSelector: '.grid-item',
-
-  		// Loading message
-  		loadingText: ''
+      loading: {
+  		  // Loading message
+  		  loadingText: '',
+        // Finish message
+        finishedMsg: ' ',
+        donetext : ' '
+      }
   	},
     function(new_elts) {
       var w = $('.grid-item').width();
