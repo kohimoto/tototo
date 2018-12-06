@@ -189,14 +189,14 @@ header .header-inner {
 
 header .header-menu {
   position: absolute;
-  right: 10%;
+  right: 3rem;
   top: 0;
   margin: 1.2rem 0; }
 
 header li {
   display: inline-block;
   list-style: none;
-  padding: 0 20px;
+  padding: 0 1.2rem;
   font-size: 1.2rem;
   line-height: 1; }
   header li a {
