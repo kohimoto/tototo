@@ -417,3 +417,14 @@ header li {
 
 .single footer {
   display: none; }
+
+/* =======================================================
+* contact
+* ======================================================= */
+.page-template-default #page .wrap #primary .entry-header {
+  float: none;
+  width: 100%; }
+
+.page-template-default #page .wrap #primary .entry-content {
+  float: none;
+  width: 100%; }
