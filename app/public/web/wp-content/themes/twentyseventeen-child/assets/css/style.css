@@ -71,11 +71,18 @@ input, select {
 html {
   font-size: 20px; }
 
-body {
+body,
+button,
+input,
+select,
+textarea {
   font-family: 'Khula', kozuka-gothic-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.05rem;
+  color: #111;
+  font-size: 20px;
+  line-height: 1.8; }
 
 a:focus,
 *:focus {
@@ -92,8 +99,7 @@ h2, h3 {
     cursor: pointer; }
   h2 span, h3 span {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 18px 20px 10px;
-    line-height: 1; }
+    padding: 18px 20px 10px; }
 
 h3 {
   font-size: 1.5rem; }
@@ -177,6 +183,8 @@ header.site-header {
   bottom: 0;
   z-index: 2;
   background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  z-index: 11;
   -webkit-transition: transform 0.5s;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -193,8 +201,7 @@ header .header-inner {
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  position: relative;
-  border-top: 1px solid #e5e5e5; }
+  position: relative; }
   header .header-inner h1 {
     line-height: 0;
     margin: 0.8rem 0; }
@@ -212,15 +219,15 @@ header .header-menu {
 header li {
   display: inline-block;
   list-style: none;
-  padding: 0 1.2rem;
+  padding: 0 0.7rem;
   font-size: 1.2rem;
   line-height: 1;
-  vertical-align: bottom; }
+  /*vertical-align: bottom;*/ }
   header li a {
     line-height: 1; }
     header li a span {
       line-height: 1;
-      vertical-align: bottom;
+      /*vertical-align: bottom;*/
       padding: 5px 10px 0; }
 
 /* =======================================================
@@ -232,6 +239,12 @@ header li {
   left: 0;
   margin-left: 2rem;
   z-index: 2; }
+  .site-cate-list .cate-block h2 a, .site-cate-list .cate-block h3 a {
+    color: #fff;
+    display: block;
+    cursor: pointer; }
+  .site-cate-list .cate-block h2 span, .site-cate-list .cate-block h3 span {
+    line-height: 1; }
   .site-cate-list .cate-block .cate_child {
     position: fixed;
     top: 0;
@@ -412,10 +425,18 @@ header li {
       width: 100%; }
   .single .site-content #primary.content-area {
     width: 100%; }
-    .single .site-content #primary.content-area .entry-header h3 span a {
-      padding: 0 0 0 30px; }
-      .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
-        padding: 0; }
+    .single .site-content #primary.content-area .entry-header {
+      top: -1.8rem;
+      position: relative; }
+      .single .site-content #primary.content-area .entry-header h2 {
+        word-break: break-all; }
+      .single .site-content #primary.content-area .entry-header h3 span a {
+        padding: 0 0 0 30px; }
+        .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
+          padding: 0; }
+        .single .site-content #primary.content-area .entry-header h3 span a::before {
+          content: '#';
+          padding-right: 2px; }
   .single .site-content .next-post {
     height: 20%;
     overflow: hidden; }
