@@ -85,5 +85,13 @@ $(function(){
       $(this).removeClass('open_cate');
     }
   );
+  $(".next-post").hover(
+    function () {
+      $('.inner-next .inner-ttl').addClass('is-show');
+    },
+    function () {
+      $('.inner-next .inner-ttl').removeClass('is-show');
+    }
+  );
 
 });
