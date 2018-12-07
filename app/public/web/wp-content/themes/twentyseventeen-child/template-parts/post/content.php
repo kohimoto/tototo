@@ -18,7 +18,8 @@
 	endif;
 	?>
   <?php
-  if ( !is_front_page() && !is_home() ) {
+  //topとcategoryページでは記事タイトルは表示しない
+  if ( !is_front_page() && !is_home() && !is_category()) {
   ?>
 	<header class="entry-header">
 		<?php

@@ -63,7 +63,7 @@
 	endif;
 	?>
   <?php
-  if ( is_front_page() && is_home() ) {
+  if ( (is_front_page() && is_home()) || is_category() ) {
   ?>
   <?php
   $categories = get_categories('parent=0');
