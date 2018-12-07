@@ -48,7 +48,7 @@ a:focus, *:focus {
   outline: none; }
 
 a:hover {
-  /*opacity: 0.9;*/ }
+  opacity: 0.9; }
 
 input, select {
   vertical-align: middle; }
@@ -195,10 +195,6 @@ header li {
   line-height: 1; }
   header li a {
     line-height: 1; }
-    header li a span {
-      line-height: 1;
-      vertical-align: bottom;
-      padding: 5px 10px 0; }
 
 /* =======================================================
 * top
@@ -277,8 +273,10 @@ header li {
 .pagenavi {
   display: none; }
 
-.navigation .nav-links a {
-  color: transparent; }
+.navigation {
+  display: none; }
+  .navigation .nav-links a {
+    color: transparent; }
 
 .grid {
   overflow: hidden; }
@@ -306,15 +304,20 @@ header li {
     content: '';
     display: block;
     clear: both; }
+  .grid svg.icon {
+    display: none; }
 
-.home .site-content {
+.home .site-content,
+.archive .site-content {
   padding: 0; }
 
-.home .wrap {
+.home .wrap,
+.archive .wrap {
   max-width: 100%;
   padding: 0;
   overflow: hidden; }
-  .home .wrap #primary {
+  .home .wrap #primary,
+  .archive .wrap #primary {
     width: 100%;
     /*animation: home_wrap 10s linear infinite;*/ }
 
@@ -352,24 +355,31 @@ header li {
     top: 1%;
     left: 0%; } }
 
-.home #main {
+.home #main,
+.archive #main {
   position: relative; }
-  .home #main .post {
+  .home #main .post,
+  .archive #main .post {
     /*width: 200px;
       display: inline-block;
       margin: 15px 40px;
       vertical-align: top;
       height: 250px;*/ }
-    .home #main .post:first-of-type {
+    .home #main .post:first-of-type,
+    .archive #main .post:first-of-type {
       /*padding-left: 10%;*/ }
-    .home #main .post:nth-child(4n) {
+    .home #main .post:nth-child(4n),
+    .archive #main .post:nth-child(4n) {
       /*width: 350px;*/ }
-    .home #main .post .post-thumbnail {
+    .home #main .post .post-thumbnail,
+    .archive #main .post .post-thumbnail {
       padding: 0;
       margin: 0; }
-      .home #main .post .post-thumbnail img {
+      .home #main .post .post-thumbnail img,
+      .archive #main .post .post-thumbnail img {
         width: 100%;
         border-radius: 100%; }
 
-.home footer {
+.home footer,
+.archive footer {
   display: none; }
