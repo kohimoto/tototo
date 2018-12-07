@@ -484,6 +484,13 @@ header {
         .entry-header {
           float: none;
           width: 100%;
+          .entry-title {
+            color: #fff;
+            font-size: 1.625rem;
+            font-weight: inherit;
+            letter-spacing: inherit;
+            text-transform: inherit;
+          }
         }
         .entry-content {
           float: none;

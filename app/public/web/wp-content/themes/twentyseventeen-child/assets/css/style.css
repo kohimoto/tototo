@@ -456,6 +456,12 @@ header li {
 .page-template-default #page .wrap #primary .entry-header {
   float: none;
   width: 100%; }
+  .page-template-default #page .wrap #primary .entry-header .entry-title {
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit; }
 
 .page-template-default #page .wrap #primary .entry-content {
   float: none;
