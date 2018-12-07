@@ -263,17 +263,7 @@ header {
     transform: translateX(-140%);
   }
 }
-.pagenavi {
-  display: none;
-}
-.navigation {
-  display: none;
-  .nav-links {
-    a {
-      color: transparent;
-    }
-  }
-}
+
 .grid {
   overflow: hidden;
   .grid-item {
@@ -372,4 +362,30 @@ header {
   footer {
     display: none;
   }
+  .pagenavi {
+    display: none;
+  }
+  .navigation {
+    display: none;
+    .nav-links {
+      a {
+        color: transparent;
+      }
+    }
+  }
+}
+
+/* =======================================================
+* single
+* ======================================================= */
+.single {
+  #primary {
+    &.content-area {
+      width: 100%;
+    }
+  }
+  footer {
+    display: none;
+  }
+
 }

@@ -270,14 +270,6 @@ header li {
   -ms-transform: translateX(-140%);
   transform: translateX(-140%); }
 
-.pagenavi {
-  display: none; }
-
-.navigation {
-  display: none; }
-  .navigation .nav-links a {
-    color: transparent; }
-
 .grid {
   overflow: hidden; }
   .grid .grid-item {
@@ -384,4 +376,24 @@ header li {
 
 .home footer,
 .archive footer {
+  display: none; }
+
+.home .pagenavi,
+.archive .pagenavi {
+  display: none; }
+
+.home .navigation,
+.archive .navigation {
+  display: none; }
+  .home .navigation .nav-links a,
+  .archive .navigation .nav-links a {
+    color: transparent; }
+
+/* =======================================================
+* single
+* ======================================================= */
+.single #primary.content-area {
+  width: 100%; }
+
+.single footer {
   display: none; }

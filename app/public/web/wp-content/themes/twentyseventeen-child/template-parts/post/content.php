@@ -19,22 +19,8 @@
 	?>
   <?php
   //topとcategoryページでは記事タイトルは表示しない
-  if ( !is_front_page() && !is_home() && !is_category()) {
   ?>
-	<header class="entry-header">
-		<?php
-		if ( is_single() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		} else {
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		}
-		?>
-	</header><!-- .entry-header -->
-  <?php
-  }
-  ?>
-
-	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
+  	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 <?php
 $cnt++;
 $cnt_arr = array("2","9","11","12","16","17");
