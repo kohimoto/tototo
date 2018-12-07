@@ -304,6 +304,8 @@ header li {
     content: '';
     display: block;
     clear: both; }
+  .grid svg.icon {
+    display: none; }
 
 .home .site-content {
   padding: 0; }
