@@ -445,3 +445,45 @@ header li {
 .page-template-default #page .wrap #primary .entry-content {
   float: none;
   width: 100%; }
+
+.page-template-default .wpcf7 {
+  padding: 3em 0; }
+  .page-template-default .wpcf7 p {
+    margin-bottom: 1.5em; }
+  .page-template-default .wpcf7 label span {
+    display: inline-block; }
+    .page-template-default .wpcf7 label span.left-block {
+      width: 20%;
+      vertical-align: top;
+      padding-top: 1.2em; }
+      .page-template-default .wpcf7 label span.left-block.last {
+        vertical-align: top;
+        padding-top: 2em; }
+  .page-template-default .wpcf7 label .wpcf7-form-control-wrap {
+    width: 80%; }
+    .page-template-default .wpcf7 label .wpcf7-form-control-wrap input {
+      padding: 1rem; }
+  .page-template-default .wpcf7 .hissu {
+    color: red; }
+
+.page-template-default .send {
+  text-align: center; }
+  .page-template-default .send input {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%; }
+
+.page-template-default div.wpcf7 .ajax-loader {
+  display: block;
+  margin: 10px auto; }
+
+.page-template-default div.wpcf7-validation-errors,
+.page-template-default div.wpcf7-acceptance-missing {
+  border: none;
+  text-align: center; }
+
+.page-template-default .wpcf7-not-valid-tip {
+  padding-top: 10px; }
+
+.page-template-default footer {
+  display: none; }
