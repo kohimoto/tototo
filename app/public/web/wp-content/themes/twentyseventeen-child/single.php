@@ -49,6 +49,17 @@ $next_post = get_next_post(); // 次の投稿を取得
 if( $next_post ): // 次の投稿があれば表示
 ?>
 <div class="next-post">
+  <div class="inner-next">
+    <div class="inner-ttl">
+      <p>Next Project<img src="" alt="nexn-arrow"></p>
+      <p><?php  echo get_the_title( $prev_post->ID ); ?></p>
+    </div>
+    <div class="inner-img">
+      <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="next-link">
+      <?php echo get_the_post_thumbnail( $prev_post->ID, 'full'); ?>
+      </a>
+    </div>
+  </div>
 </div>
 <?php
 endif;

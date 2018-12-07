@@ -395,5 +395,22 @@ header li {
 .single #primary.content-area {
   width: 100%; }
 
+.single .site-content {
+  padding-top: 0; }
+
+.single .single-featured-image-header {
+  background-color: transparent;
+  border-bottom: none; }
+
+.single .next-post {
+  height: 20%;
+  overflow: hidden; }
+  .single .next-post .inner-ttl {
+    float: left;
+    width: 50%; }
+  .single .next-post .inner-img {
+    float: left;
+    width: 50%; }
+
 .single footer {
   display: none; }

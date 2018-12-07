@@ -384,6 +384,25 @@ header {
       width: 100%;
     }
   }
+  .site-content {
+    padding-top: 0;
+  }
+  .single-featured-image-header {
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .next-post {
+    height: 20%;
+    overflow: hidden;
+    .inner-ttl {
+      float: left;
+      width: 50%;
+    }
+    .inner-img {
+      float: left;
+      width: 50%;
+    }
+  }
   footer {
     display: none;
   }
