@@ -178,8 +178,14 @@ header {
     padding: 0 1.2rem;
     font-size: 1.2rem;
     line-height: 1;
+    vertical-align: bottom;
     a {
       line-height: 1;
+      span {
+        line-height: 1;
+        vertical-align: bottom;
+        padding:5px 10px 0;
+      }
     }
   }
 }
@@ -231,12 +237,12 @@ header {
       transform: translateX(-100%);
       background: rgba(0,0,0,0.8);
       padding: 1.7rem 0;
+      min-width: 500px;
       li {
           font-size: 2rem;
           transition: all 0.5s;
          &:hover {
-           padding: 1rem 2rem;
-           border-radius: 0 80px 80px 0;
+           padding: 1rem;
          }
         a {
           padding: 0 3rem;
@@ -245,7 +251,7 @@ header {
           line-height: 2.2;
           &:hover {
             letter-spacing: 0.5rem;
-            font-size: 3rem;
+            font-size: 2.8rem;
           }
         }
       }
