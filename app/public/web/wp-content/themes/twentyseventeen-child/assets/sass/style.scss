@@ -83,6 +83,31 @@ a:focus,
 *:focus {
   outline:none;
 }
+h2,h3 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 2rem;
+  color: #fff;
+  a {
+    color: #fff;
+    display: block;
+    cursor: pointer;
+  }
+  span {
+    background-color: rgba(0,0,0,0.8);
+    padding: 18px 20px 10px;
+    line-height: 1;
+  }
+}
+h3{
+  font-size: 1.5rem;
+  a {
+    display: inline-block;
+  }
+  span {
+    padding: 16px 20px 8px;
+  }
+}
 .svg_org {
     display: none;
 }
@@ -156,6 +181,7 @@ header {
     text-align: center;
     overflow: hidden;
     position: relative;
+    border-top: 1px solid #e5e5e5;
     h1 {
       line-height: 0;
       margin: 0.8rem 0;
@@ -205,24 +231,6 @@ header {
   margin-left:2rem;
   z-index: 2;
   .cate-block{
-    /*position: relative;*/
-
-    h2 {
-      font-weight: bold;
-      margin: 0;
-      font-size: 2rem;
-      a {
-        color: #fff;
-        display: block;
-        cursor: pointer;
-      }
-    }
-
-    span {
-      background-color: rgba(0,0,0,0.8);
-      padding: 18px 20px 10px;
-      line-height: 1;
-    }
     .cate_child {
       position: fixed;
       top: 0;
@@ -394,6 +402,9 @@ header {
   .single-featured-image-header {
     background-color: transparent;
     border-bottom: none;
+    img{
+      width: 100%;
+    }
   }
   .next-post {
     height: 20%;

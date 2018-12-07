@@ -12,8 +12,8 @@
 
 ?>
 	<header class="entry-header">
-      <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-      <h3 class="entry-cate"><?php the_category(' '); ?></h3>
+      <?php the_title( '<h2 class="entry-title"><span class="mask is-show">', '</span></h2>' ); ?>
+      <h3 class="entry-cate"><span class="mask is-show"><?php the_category(' '); ?></span></h3>
 	</header><!-- .entry-header -->
   <div class="entry-detail-content">
     <?php
