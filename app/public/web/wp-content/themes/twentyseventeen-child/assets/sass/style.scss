@@ -391,33 +391,47 @@ header {
 * single
 * ======================================================= */
 .single {
-  #primary {
-    &.content-area {
-      width: 100%;
-    }
-  }
   .site-content {
     padding-top: 0;
-  }
-  .single-featured-image-header {
-    background-color: transparent;
-    border-bottom: none;
-    img{
-      width: 100%;
+    .single-featured-image-header {
+      background-color: transparent;
+      border-bottom: none;
+      img{
+        width: 100%;
+      }
+    }
+    #primary {
+      &.content-area {
+        width: 100%;
+        .entry-header {
+          h3{
+            span{
+              a{
+                padding: 0 0 0 30px;
+                &:first-of-type {
+                  padding: 0;
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+    .next-post {
+      height: 20%;
+      overflow: hidden;
+      .inner-ttl {
+        float: left;
+        width: 50%;
+      }
+      .inner-img {
+        float: left;
+        width: 50%;
+      }
     }
   }
-  .next-post {
-    height: 20%;
-    overflow: hidden;
-    .inner-ttl {
-      float: left;
-      width: 50%;
-    }
-    .inner-img {
-      float: left;
-      width: 50%;
-    }
-  }
+
+
   footer {
     display: none;
   }

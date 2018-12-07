@@ -857,7 +857,6 @@ a:focus {
 
 a:hover,
 a:active {
-	color: #000;
 	outline: 0;
 }
 
