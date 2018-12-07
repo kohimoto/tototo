@@ -81,6 +81,27 @@ a:focus,
 *:focus {
   outline: none; }
 
+h2, h3 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 2rem;
+  color: #fff; }
+  h2 a, h3 a {
+    color: #fff;
+    display: block;
+    cursor: pointer; }
+  h2 span, h3 span {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 18px 20px 10px;
+    line-height: 1; }
+
+h3 {
+  font-size: 1.5rem; }
+  h3 a {
+    display: inline-block; }
+  h3 span {
+    padding: 16px 20px 8px; }
+
 .svg_org {
   display: none; }
 
@@ -172,7 +193,8 @@ header .header-inner {
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border-top: 1px solid #e5e5e5; }
   header .header-inner h1 {
     line-height: 0;
     margin: 0.8rem 0; }
@@ -210,55 +232,41 @@ header li {
   left: 0;
   margin-left: 2rem;
   z-index: 2; }
-  .site-cate-list .cate-block {
-    /*position: relative;*/ }
-    .site-cate-list .cate-block h2 {
-      font-weight: bold;
-      margin: 0;
-      font-size: 2rem; }
-      .site-cate-list .cate-block h2 a {
+  .site-cate-list .cate-block .cate_child {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    list-style: none;
+    -webkit-transition: transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.7rem 0;
+    min-width: 500px; }
+    .site-cate-list .cate-block .cate_child li {
+      font-size: 2rem;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .site-cate-list .cate-block .cate_child li:hover {
+        padding: 1rem; }
+      .site-cate-list .cate-block .cate_child li a {
+        padding: 0 3rem;
         color: #fff;
-        display: block;
-        cursor: pointer; }
-    .site-cate-list .cate-block span {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 18px 20px 10px;
-      line-height: 1; }
-    .site-cate-list .cate-block .cate_child {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      list-style: none;
-      -webkit-transition: transform 0.5s;
-      -webkit-transition: -webkit-transform 0.5s;
-      transition: -webkit-transform 0.5s;
-      -o-transition: transform 0.5s;
-      transition: transform 0.5s;
-      transition: transform 0.5s, -webkit-transform 0.5s;
-      -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      transform: translateX(-100%);
-      background: rgba(0, 0, 0, 0.8);
-      padding: 1.7rem 0;
-      min-width: 500px; }
-      .site-cate-list .cate-block .cate_child li {
-        font-size: 2rem;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s; }
-        .site-cate-list .cate-block .cate_child li:hover {
-          padding: 1rem; }
-        .site-cate-list .cate-block .cate_child li a {
-          padding: 0 3rem;
-          color: #fff;
-          -webkit-transition: all 0.3s;
-          -o-transition: all 0.3s;
-          transition: all 0.3s;
-          line-height: 2.2; }
-          .site-cate-list .cate-block .cate_child li a:hover {
-            letter-spacing: 0.5rem;
-            font-size: 2.8rem; }
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        line-height: 2.2; }
+        .site-cate-list .cate-block .cate_child li a:hover {
+          letter-spacing: 0.5rem;
+          font-size: 2.8rem; }
 
 .site-cate-list.open .cate-block.open_cate .cate_child {
   -webkit-transform: translateX(0%);
@@ -404,6 +412,8 @@ header li {
 .single .single-featured-image-header {
   background-color: transparent;
   border-bottom: none; }
+  .single .single-featured-image-header img {
+    width: 100%; }
 
 .single .next-post {
   height: 20%;
