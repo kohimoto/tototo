@@ -48,7 +48,7 @@ a:focus, *:focus {
   outline: none; }
 
 a:hover {
-  /*opacity: 0.9;*/ }
+  opacity: 0.9; }
 
 input, select {
   vertical-align: middle; }
@@ -195,10 +195,6 @@ header li {
   line-height: 1; }
   header li a {
     line-height: 1; }
-    header li a span {
-      line-height: 1;
-      vertical-align: bottom;
-      padding: 5px 10px 0; }
 
 /* =======================================================
 * top
