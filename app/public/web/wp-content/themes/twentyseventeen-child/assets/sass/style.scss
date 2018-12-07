@@ -540,7 +540,7 @@ header {
 
 
 /* =======================================================
-* contact
+* Fix page
 * ======================================================= */
 .page-template-default {
   #page {
@@ -561,7 +561,82 @@ header {
           float: none;
           width: 100%;
         }
+        .page-box {
+          padding: 1em 0 3em;
+          dl {
+            overflow: hidden;
+            dt {
+              float: left;
+              width: 20%
+            }
+            dd {
+              float: left;
+              width: 80%;
+              margin-bottom: 1em;
+            }
+          }
+        }
+        iframe{
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
       }
     }
   }
+  .wpcf7 {
+    padding: 3em 0;
+    p {
+      margin-bottom: 1.5em;
+    }
+    label {
+      span {
+        display: inline-block;
+        &.left-block {
+          width: 20%;
+          vertical-align: top;
+          padding-top: 1.2em;
+          &.last {
+            vertical-align: top;
+            padding-top: 2em;
+          }
+        }
+      }
+      .wpcf7-form-control-wrap {
+        width: 80%;
+        input {
+          padding: 1rem;
+        }
+      }
+    }
+    .hissu {
+      color: red;
+    }
+  }
+  .send {
+    text-align: center;
+    input {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+    }
+  }
+  div.wpcf7 .ajax-loader {
+    display: block;
+    margin: 10px auto;
+  }
+  div.wpcf7-validation-errors,
+  div.wpcf7-acceptance-missing {
+  border: none;
+  text-align: center;
+  }
+  .wpcf7-not-valid-tip {
+    padding-top: 10px;
+  }
+  footer {
+    display: none;
+  }
+
 }
