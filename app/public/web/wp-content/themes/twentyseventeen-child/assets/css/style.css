@@ -451,7 +451,7 @@ header li {
   display: none; }
 
 /* =======================================================
-* contact
+* Fix page
 * ======================================================= */
 .page-template-default #page .wrap #primary .entry-header {
   float: none;
@@ -466,6 +466,25 @@ header li {
 .page-template-default #page .wrap #primary .entry-content {
   float: none;
   width: 100%; }
+
+.page-template-default #page .wrap #primary .page-box {
+  padding: 1em 0 3em; }
+  .page-template-default #page .wrap #primary .page-box dl {
+    overflow: hidden; }
+    .page-template-default #page .wrap #primary .page-box dl dt {
+      float: left;
+      width: 20%; }
+    .page-template-default #page .wrap #primary .page-box dl dd {
+      float: left;
+      width: 80%;
+      margin-bottom: 1em; }
+
+.page-template-default #page .wrap #primary iframe {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .page-template-default .wpcf7 {
   padding: 3em 0; }
