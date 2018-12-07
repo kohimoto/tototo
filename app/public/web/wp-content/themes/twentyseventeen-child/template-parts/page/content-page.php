@@ -14,7 +14,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h2 class="entry-title"><a><span>', '</span></a></h2>' ); ?>
+		<?php the_title( '<h2 class="entry-title"><span class="mask is-show">', '</span></h2>' ); ?>
 		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
