@@ -266,23 +266,24 @@ header {
       -o-transition: transform 0.5s;
       transition: transform 0.5s;
       transform: translateX(-100%);
-      background: rgba(0,0,0,0.8);
+      background: rgba(255,255,255,0.8);
       padding: 1.7rem 0;
       min-width: 500px;
       li {
           font-size: 2rem;
           transition: all 0.5s;
          &:hover {
-           padding: 1rem;
+           padding: 0.5rem;
          }
         a {
-          padding: 0 3rem;
-          color: #fff;
+          margin: 0.5rem 2rem;
+          padding: 10px 1rem 0;
+          color: #000;
           transition: all 0.3s;
-          line-height: 2.2;
+          line-height: 1;
           &:hover {
             letter-spacing: 0.5rem;
-            font-size: 2.8rem;
+            font-size: 2.4rem;
           }
         }
       }
@@ -373,17 +374,6 @@ header {
   #main {
     position: relative;
     .post {
-      /*width: 200px;
-      display: inline-block;
-      margin: 15px 40px;
-      vertical-align: top;
-      height: 250px;*/
-      &:first-of-type {
-        /*padding-left: 10%;*/
-      }
-      &:nth-child(4n) {
-        /*width: 350px;*/
-      }
       .post-thumbnail {
         padding: 0;
         margin: 0;

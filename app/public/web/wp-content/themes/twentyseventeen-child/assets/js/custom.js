@@ -93,5 +93,13 @@ $(function(){
       $('.inner-next .inner-ttl').removeClass('is-show');
     }
   );
+  $(".cate_child_list").hover(
+    function () {
+      $(this).addClass('is-show');
+    },
+    function () {
+      $(this).removeClass('is-show');
+    }
+  );
 
 });

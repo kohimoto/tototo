@@ -73,12 +73,15 @@
       //子カテゴリの一覧取得
       $category_children = get_categories($category_children_args);
       //子カテゴリの数だけリスト出力
+      $cat_slug .= " cate_child_list mask";
+
       $cat_child_slug = "";
       $parent_list = '<li><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></li>';
       echo $parent_list;
       foreach($category_children as $child_val){
         $cat_child_link = get_category_link($child_val -> cat_ID);
         $cat_child_slug = $child_val -> category_nicename;
+        $cat_child_slug .= " cate_child_list mask";
         echo '<li><a href="' . $cat_child_link . '" class="'. $cat_child_slug.'">' . $child_val -> name . '</a></li>';
       }
       echo '</ul>';

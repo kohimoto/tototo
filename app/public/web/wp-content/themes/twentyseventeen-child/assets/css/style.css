@@ -260,7 +260,7 @@ header li {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     padding: 1.7rem 0;
     min-width: 500px; }
     .site-cate-list .cate-block .cate_child li {
@@ -269,17 +269,18 @@ header li {
       -o-transition: all 0.5s;
       transition: all 0.5s; }
       .site-cate-list .cate-block .cate_child li:hover {
-        padding: 1rem; }
+        padding: 0.5rem; }
       .site-cate-list .cate-block .cate_child li a {
-        padding: 0 3rem;
-        color: #fff;
+        margin: 0.5rem 2rem;
+        padding: 10px 1rem 0;
+        color: #000;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
-        line-height: 2.2; }
+        line-height: 1; }
         .site-cate-list .cate-block .cate_child li a:hover {
           letter-spacing: 0.5rem;
-          font-size: 2.8rem; }
+          font-size: 2.4rem; }
 
 .site-cate-list.open .cate-block.open_cate .cate_child {
   -webkit-transform: translateX(0%);
@@ -376,27 +377,14 @@ header li {
 .home #main,
 .archive #main {
   position: relative; }
-  .home #main .post,
-  .archive #main .post {
-    /*width: 200px;
-      display: inline-block;
-      margin: 15px 40px;
-      vertical-align: top;
-      height: 250px;*/ }
-    .home #main .post:first-of-type,
-    .archive #main .post:first-of-type {
-      /*padding-left: 10%;*/ }
-    .home #main .post:nth-child(4n),
-    .archive #main .post:nth-child(4n) {
-      /*width: 350px;*/ }
-    .home #main .post .post-thumbnail,
-    .archive #main .post .post-thumbnail {
-      padding: 0;
-      margin: 0; }
-      .home #main .post .post-thumbnail img,
-      .archive #main .post .post-thumbnail img {
-        width: 100%;
-        border-radius: 100%; }
+  .home #main .post .post-thumbnail,
+  .archive #main .post .post-thumbnail {
+    padding: 0;
+    margin: 0; }
+    .home #main .post .post-thumbnail img,
+    .archive #main .post .post-thumbnail img {
+      width: 100%;
+      border-radius: 100%; }
 
 .home footer,
 .archive footer {
