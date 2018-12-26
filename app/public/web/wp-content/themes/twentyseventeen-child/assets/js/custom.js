@@ -1,4 +1,16 @@
 $(function(){
+  // ** loading  **//
+    var h = $(window).height();
+    $('#loader-bg ,#loader').height(h).css('display','block');
+    $(window).load(function () {
+      setTimeout(function(){
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
+      },1000);
+
+    });
+
+
   // ** grid  **//
   var w = $('.grid-item').width();
   $('.grid-item').height(w);

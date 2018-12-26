@@ -99,6 +99,10 @@
     }
   }
   ?>
-
+  <div id ="loader-bg">
+    <div id="loader">
+	     <img src="/images/common/loader.gif" alt="LOADING...">
+    </div>
+  </div>
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
