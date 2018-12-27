@@ -541,6 +541,10 @@ header li {
 /* =======================================================
 * Fix page
 * ======================================================= */
+.page-template-default #page .wrap #primary h2 span, .page-template-default #page .wrap #primary h3 span {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 0px; }
+
 .page-template-default #page .wrap #primary .entry-header {
   float: none;
   width: 100%; }

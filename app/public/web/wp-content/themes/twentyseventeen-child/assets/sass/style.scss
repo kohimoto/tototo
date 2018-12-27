@@ -588,6 +588,10 @@ header {
   #page {
     .wrap {
       #primary {
+        h2 span, h3 span {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 20px 0px;
+        }
         .entry-header {
           float: none;
           width: 100%;
