@@ -18,6 +18,35 @@ get_header(); ?>
 
 		<?php
 		if ( have_posts() ) : ?>
+
+    <?php if (!is_paged()) : ?>
+    <?php $sticky = get_option('sticky_posts');
+    	if(!empty($sticky)):
+    		$get_cat = get_the_category();
+    		$cat = $get_cat[0];
+    		$args = [
+    			'posts_per_page' => 1,
+    			'cat' => $cat->cat_ID,
+    			'post__in'  => get_option('sticky_posts'),
+    		];
+
+    		$the_query = new WP_Query( $args );
+    		if ( $the_query->have_posts() ) :
+    			while ( $the_query->have_posts() ) : $the_query->the_post();?>
+          <div class="post-thumbnail grid-item circle-disp <?php echo $add_class;?> <?php echo $check_cnt;?>">
+            <div class="item-content">
+      				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+          </div>
+      		</div>
+    			<?php endwhile;?>
+    		<?php endif;?>
+    		<?php wp_reset_postdata(); ?>
+    	<?php endif;?>
+    <?php endif;?>
+
+
+
+
 			<?php
 $cnt = 0;
 			/* Start the Loop */
