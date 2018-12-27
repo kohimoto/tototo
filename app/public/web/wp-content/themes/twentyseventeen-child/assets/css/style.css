@@ -574,6 +574,8 @@ header li {
 .page-template-default #page .wrap #primary .entry-content {
   float: none;
   width: 100%; }
+  .page-template-default #page .wrap #primary .entry-content .contact_txt_01 {
+    padding-top: 2rem; }
   .page-template-default #page .wrap #primary .entry-content h3 span {
     background-color: black; }
     .page-template-default #page .wrap #primary .entry-content h3 span.mask::after {
@@ -605,14 +607,14 @@ header li {
   .page-template-default .wpcf7 label span {
     display: inline-block; }
     .page-template-default .wpcf7 label span.left-block {
-      width: 20%;
+      width: 23%;
       vertical-align: top;
       padding-top: 1.2em; }
       .page-template-default .wpcf7 label span.left-block.last {
         vertical-align: top;
         padding-top: 2em; }
   .page-template-default .wpcf7 label .wpcf7-form-control-wrap {
-    width: 80%; }
+    width: 77%; }
     .page-template-default .wpcf7 label .wpcf7-form-control-wrap input {
       padding: 1.2rem; }
   .page-template-default .wpcf7 .hissu {
