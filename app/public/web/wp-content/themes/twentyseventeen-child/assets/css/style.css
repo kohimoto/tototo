@@ -637,5 +637,9 @@ header li {
 .page-template-default .wpcf7-not-valid-tip {
   padding-top: 10px; }
 
+.page-template-default div.wpcf7-mail-sent-ok {
+  border: none;
+  text-align: center; }
+
 .page-template-default footer {
   display: none; }

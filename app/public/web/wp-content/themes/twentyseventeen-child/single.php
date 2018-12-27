@@ -47,6 +47,7 @@ if( !empty($image) ) {
 <?php
 $next_post = get_previous_post(); // 次の投稿を取得
 if( $next_post ): // 次の投稿があれば表示
+  if($next_post->post_title !== "fix content"):
 ?>
 <div class="next-post">
   <div class="inner-next">
@@ -65,6 +66,7 @@ if( $next_post ): // 次の投稿があれば表示
   </div>
 </div>
 <?php
+  endif;
 endif;
 ?>
 
