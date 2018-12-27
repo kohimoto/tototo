@@ -99,14 +99,14 @@ h2, h3 {
     cursor: pointer; }
   h2 span, h3 span {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 18px 20px 10px; }
+    padding: 16px 20px 6px; }
 
 h3 {
   font-size: 1.5rem; }
   h3 a {
     display: inline-block; }
   h3 span {
-    padding: 16px 30px 8px; }
+    padding: 10px 30px 2px; }
 
 .svg_org {
   display: none; }
@@ -300,7 +300,8 @@ header li {
     display: block;
     cursor: pointer; }
   .site-cate-list .cate-block h2 span, .site-cate-list .cate-block h3 span {
-    line-height: 1; }
+    line-height: 1;
+    background-color: black; }
   .site-cate-list .cate-block .cate_child {
     position: fixed;
     top: 0;
@@ -493,6 +494,8 @@ header li {
       position: relative;
       display: block;
       height: 340px; }
+      .single .site-content .next-post .inner-next .inner-ttl.mask::after {
+        background: #fff; }
       .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt {
         position: absolute;
         width: 100%;
