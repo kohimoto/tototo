@@ -175,7 +175,7 @@ h3{
     background: #000;
     animation: loading 3s ease 0s infinite;
     position: relative;
-    right: 0;
+    left: 0;
   }
   #loader {
     .header-logo {
@@ -188,7 +188,6 @@ h3{
       -webkit-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
       text-align: center;
-      animation: loading 3s ease 0s infinite;
       filter: invert(100%);
       mix-blend-mode: difference;
     }
@@ -196,13 +195,13 @@ h3{
 }
 @keyframes loading {
   0% {
-    right: 0;
+    left: 0;
   }
   50% {
-    right: 100%;
+    left: 100%;
   }
   100% {
-    right: 200%;
+    left: 200%;
   }
   /*
   100% {
