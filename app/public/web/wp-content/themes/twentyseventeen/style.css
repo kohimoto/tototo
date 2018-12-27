@@ -1700,10 +1700,11 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 .search .site-main > article {
 	padding-bottom: 2em;
 }
-
+/*
 body:not(.twentyseventeen-front-page) .entry-header {
 	padding: 1em 0;
 }
+*/
 
 body:not(.twentyseventeen-front-page) .entry-header,
 body:not(.twentyseventeen-front-page) .entry-content,

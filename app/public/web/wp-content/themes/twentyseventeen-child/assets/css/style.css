@@ -187,7 +187,7 @@ h3 {
     -webkit-animation: loading 3s ease 0s infinite;
     animation: loading 3s ease 0s infinite;
     position: relative;
-    right: 0; }
+    left: 0; }
   #loader-bg #loader .header-logo {
     fill: currentColor;
     width: 400px;
@@ -198,19 +198,17 @@ h3 {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    -webkit-animation: loading 3s ease 0s infinite;
-    animation: loading 3s ease 0s infinite;
     -webkit-filter: invert(100%);
     filter: invert(100%);
     mix-blend-mode: difference; }
 
 @-webkit-keyframes loading {
   0% {
-    right: 0; }
+    left: 0; }
   50% {
-    right: 100%; }
+    left: 100%; }
   100% {
-    right: 200%; }
+    left: 200%; }
   /*
   100% {
     width: 100vw;
@@ -219,11 +217,11 @@ h3 {
 
 @keyframes loading {
   0% {
-    right: 0; }
+    left: 0; }
   50% {
-    right: 100%; }
+    left: 100%; }
   100% {
-    right: 200%; }
+    left: 200%; }
   /*
   100% {
     width: 100vw;
@@ -275,15 +273,15 @@ header .header-menu {
 header li {
   display: inline-block;
   list-style: none;
-  padding: 0 0.7rem;
+  padding: 0 0.5rem;
   font-size: 1.2rem;
-  line-height: 1;
-  /*vertical-align: bottom;*/ }
+  line-height: 1; }
   header li a {
     line-height: 1; }
+    header li a:hover {
+      opacity: 1; }
     header li a span {
       line-height: 1;
-      /*vertical-align: bottom;*/
       padding: 5px 10px 0; }
 
 /* =======================================================
@@ -486,7 +484,7 @@ header li {
           content: '#';
           padding-right: 2px; }
   .single .site-content .next-post .inner-next {
-    background-color: #111;
+    background-color: #000;
     height: 340px;
     overflow: hidden;
     color: #fff; }
@@ -551,7 +549,8 @@ header li {
     font-size: 1.625rem;
     font-weight: inherit;
     letter-spacing: inherit;
-    text-transform: inherit; }
+    text-transform: inherit;
+    margin-bottom: 0; }
 
 .page-template-default #page .wrap #primary .entry-content {
   float: none;

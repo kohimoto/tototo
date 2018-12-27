@@ -118,5 +118,13 @@ $(function(){
       $(this).removeClass('is-show');
     }
   );
+  $(".header-menu-list").hover(
+    function () {
+      $(this).addClass('is-show');
+    },
+    function () {
+      $(this).removeClass('is-show');
+    }
+  );
 
 });
