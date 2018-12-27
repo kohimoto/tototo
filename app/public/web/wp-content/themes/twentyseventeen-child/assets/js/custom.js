@@ -7,7 +7,11 @@ $(function(){
       setTimeout(function(){
         $('#loader-bg').delay(900).fadeOut(800);
         $('#loader').delay(600).fadeOut(300);
+
       },1000);
+      setTimeout(function(){
+        $('.entry-title-list').addClass('is-show');
+      },2500);
 
     });
 

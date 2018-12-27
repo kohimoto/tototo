@@ -45,7 +45,7 @@ if( !empty($image) ) {
 	</div><!-- #primary -->
 </div><!-- .wrap -->
 <?php
-$next_post = get_next_post(); // 次の投稿を取得
+$next_post = get_previous_post(); // 次の投稿を取得
 if( $next_post ): // 次の投稿があれば表示
 ?>
 <div class="next-post">
@@ -54,12 +54,12 @@ if( $next_post ): // 次の投稿があれば表示
       <div class="inner-ttl-txt">
         <p>Next Project
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="6.6" viewBox="0 0 50 6.6" class="injected-svg" data-src="/static/img/icon-next.svg"><path d="M50 6.3v-1H0v1h42zm-1.35.4l.7-.8-6-6-.7.8z"></path></svg></p>
-        <p><?php  echo get_the_title( $prev_post->ID ); ?></p>
+        <p><?php  echo get_the_title( $next_post->ID ); ?></p>
       </div>
     </div>
     <div class="inner-img">
-      <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="next-link">
-      <?php echo get_the_post_thumbnail( $prev_post->ID, 'full'); ?>
+      <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="next-link">
+      <?php echo get_the_post_thumbnail( $next_post->ID, 'full'); ?>
       </a>
     </div>
   </div>
