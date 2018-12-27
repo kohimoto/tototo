@@ -43,6 +43,7 @@ a {
   padding:0;
   text-decoration:none;
   box-sizing:border-box;
+  color: #000;
 }
 a:focus, *:focus {
   outline:none;
@@ -474,10 +475,18 @@ header {
             margin: 0 0 1rem 0;
             span {
               padding: 10px 30px 2px;
+              background-color: rgba(0, 0, 0, 1);
+              &.mask::after {
+                background: #fff;
+                }
             }
           }
           h3{
             span{
+              background-color: rgba(0, 0, 0, 1);
+              &.mask::after {
+                background: #fff;
+                }
               a{
                 padding: 0 0 0 1rem;
                 &:first-of-type {
@@ -606,11 +615,25 @@ header {
             letter-spacing: inherit;
             text-transform: inherit;
             margin-bottom: 0;
+            span {
+              background-color: rgba(0, 0, 0, 1);
+              &.mask::after {
+               background: #fff;
+             }
+            }
           }
         }
         .entry-content {
           float: none;
           width: 100%;
+          h3 {
+            span {
+              background-color: rgba(0, 0, 0, 1);
+              &.mask::after {
+               background: #fff;
+             }
+           }
+          }
         }
         .page-box {
           padding: 1em 0 3em;

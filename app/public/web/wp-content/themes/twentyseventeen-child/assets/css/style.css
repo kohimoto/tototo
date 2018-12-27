@@ -42,7 +42,8 @@ a {
   padding: 0;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #000; }
 
 a:focus, *:focus {
   outline: none; }
@@ -478,14 +479,21 @@ header li {
         word-break: break-all;
         margin: 0 0 1rem 0; }
         .single .site-content #primary.content-area .entry-header h2 span {
-          padding: 10px 30px 2px; }
-      .single .site-content #primary.content-area .entry-header h3 span a {
-        padding: 0 0 0 1rem; }
-        .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
-          padding: 0; }
-        .single .site-content #primary.content-area .entry-header h3 span a::before {
-          content: '#';
-          padding-right: 2px; }
+          padding: 10px 30px 2px;
+          background-color: black; }
+          .single .site-content #primary.content-area .entry-header h2 span.mask::after {
+            background: #fff; }
+      .single .site-content #primary.content-area .entry-header h3 span {
+        background-color: black; }
+        .single .site-content #primary.content-area .entry-header h3 span.mask::after {
+          background: #fff; }
+        .single .site-content #primary.content-area .entry-header h3 span a {
+          padding: 0 0 0 1rem; }
+          .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
+            padding: 0; }
+          .single .site-content #primary.content-area .entry-header h3 span a::before {
+            content: '#';
+            padding-right: 2px; }
   .single .site-content .next-post .inner-next {
     background-color: #000;
     height: 340px;
@@ -558,10 +566,18 @@ header li {
     letter-spacing: inherit;
     text-transform: inherit;
     margin-bottom: 0; }
+    .page-template-default #page .wrap #primary .entry-header .entry-title span {
+      background-color: black; }
+      .page-template-default #page .wrap #primary .entry-header .entry-title span.mask::after {
+        background: #fff; }
 
 .page-template-default #page .wrap #primary .entry-content {
   float: none;
   width: 100%; }
+  .page-template-default #page .wrap #primary .entry-content h3 span {
+    background-color: black; }
+    .page-template-default #page .wrap #primary .entry-content h3 span.mask::after {
+      background: #fff; }
 
 .page-template-default #page .wrap #primary .page-box {
   padding: 1em 0 3em; }
