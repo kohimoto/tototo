@@ -549,7 +549,8 @@ header li {
     font-size: 1.625rem;
     font-weight: inherit;
     letter-spacing: inherit;
-    text-transform: inherit; }
+    text-transform: inherit;
+    margin-bottom: 0; }
 
 .page-template-default #page .wrap #primary .entry-content {
   float: none;
