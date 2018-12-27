@@ -626,6 +626,9 @@ header {
         .entry-content {
           float: none;
           width: 100%;
+          .contact_txt_01 {
+            padding-top: 2rem;
+          }
           h3 {
             span {
               background-color: rgba(0, 0, 0, 1);
@@ -669,7 +672,7 @@ header {
       span {
         display: inline-block;
         &.left-block {
-          width: 20%;
+          width: 23%;
           vertical-align: top;
           padding-top: 1.2em;
           &.last {
@@ -679,7 +682,7 @@ header {
         }
       }
       .wpcf7-form-control-wrap {
-        width: 80%;
+        width: 77%;
         input {
           padding: 1.2rem;
         }
