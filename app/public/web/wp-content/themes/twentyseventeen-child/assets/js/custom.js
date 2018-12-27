@@ -1,11 +1,12 @@
 $(function(){
   // ** loading  **//
     var h = $(window).height();
-    $('#loader-bg ,#loader').height(h).css('display','block');
+    //$('#loader-bg ,#loader , #loader-line').height(h).css('display','block');
+    $('#loader-bg ,#loader , #loader-line').css('display','block');
     $(window).load(function () {
       setTimeout(function(){
-        //$('#loader-bg').delay(900).fadeOut(800);
-        //$('#loader').delay(600).fadeOut(300);
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
       },1000);
 
     });

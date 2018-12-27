@@ -100,8 +100,10 @@
   }
   ?>
   <div id ="loader-bg">
+    <div id="loader-line">
+    </div>
     <div id="loader">
-	     <img src="/images/common/loader.gif" alt="LOADING...">
+	     <svg class="header-logo" id="logo-color"><use xlink:href="#logo"></use></svg>
     </div>
   </div>
 	<div class="site-content-contain">
