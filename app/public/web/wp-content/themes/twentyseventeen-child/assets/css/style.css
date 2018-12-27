@@ -486,7 +486,7 @@ header li {
           content: '#';
           padding-right: 2px; }
   .single .site-content .next-post .inner-next {
-    background-color: #111;
+    background-color: #000;
     height: 340px;
     overflow: hidden;
     color: #fff; }
