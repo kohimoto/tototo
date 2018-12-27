@@ -472,6 +472,9 @@ header {
           h2{
             word-break: break-all;
             margin: 0 0 1rem 0;
+            span {
+              padding: 10px 30px 2px;
+            }
           }
           h3{
             span{

@@ -477,6 +477,8 @@ header li {
       .single .site-content #primary.content-area .entry-header h2 {
         word-break: break-all;
         margin: 0 0 1rem 0; }
+        .single .site-content #primary.content-area .entry-header h2 span {
+          padding: 10px 30px 2px; }
       .single .site-content #primary.content-area .entry-header h3 span a {
         padding: 0 0 0 1rem; }
         .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
