@@ -40,7 +40,7 @@
     <div class="header-inner">
       <h1><svg class="header-logo"><use xlink:href="#logo"></use></svg></h1>
       <ul class="header-menu">
-        <li><a href="/"><span class="header-menu-list mask">TOP</span></a></li>
+        <li><a href="/category/news"><span class="header-menu-list mask">NEWS</span></a></li>
         <li><a href="/about"><span class="header-menu-list mask">ABOUT</span></a></li>
         <li><a href="/shop"><span class="header-menu-list mask">SHOP</span></a></li>
         <li><a href="/contact"><span class="header-menu-list mask">CONTACT</span></a></li>
