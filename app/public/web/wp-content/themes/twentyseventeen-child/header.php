@@ -44,7 +44,7 @@ include("./setting.php");
       <ul class="header-menu">
         <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask">NEWS</span></a></li>
         <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask">ABOUT</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>shop"><span class="header-menu-list mask">SHOP</span></a></li>
+        <li><a href="https://to-to-to.stores.jp/"><span class="header-menu-list mask">SHOP</span></a></li>
         <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask">CONTACT</span></a></li>
       </ul>
     </div>
