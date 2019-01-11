@@ -85,7 +85,7 @@ $(function(){
       }
       timer = setTimeout(function(){
         $('.site-header').removeClass("dispNone");
-      },2000 );
+      },800 );
     } else {
       $('.site-header').removeClass("dispNone");
     }
