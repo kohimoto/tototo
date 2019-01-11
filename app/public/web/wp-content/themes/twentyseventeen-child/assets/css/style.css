@@ -113,7 +113,10 @@ h3 {
   display: none; }
 
 .mask {
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transform: skewX(-13deg);
+  -ms-transform: skewX(-13deg);
+  transform: skewX(-13deg); }
 
 .mask:after {
   top: 0;

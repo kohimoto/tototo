@@ -122,6 +122,7 @@ h3{
 
 .mask {
   overflow:hidden;
+  transform: skewX(-13deg);
 }
 .mask:after{
   top:0;
@@ -714,7 +715,7 @@ header {
   }
   div.wpcf7-mail-sent-ok {
     border: none;
-    text-align: center;  
+    text-align: center;
   }
   footer {
     display: none;
