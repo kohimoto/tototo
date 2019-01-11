@@ -1,4 +1,6 @@
 <?php
+include("./setting.php");
+
 /**
  * The header for our theme
  *
@@ -40,10 +42,10 @@
     <div class="header-inner">
       <h1><svg class="header-logo"><use xlink:href="#logo"></use></svg></h1>
       <ul class="header-menu">
-        <li><a href="/category/news"><span class="header-menu-list mask">NEWS</span></a></li>
-        <li><a href="/about"><span class="header-menu-list mask">ABOUT</span></a></li>
-        <li><a href="/shop"><span class="header-menu-list mask">SHOP</span></a></li>
-        <li><a href="/contact"><span class="header-menu-list mask">CONTACT</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask">NEWS</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask">ABOUT</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>shop"><span class="header-menu-list mask">SHOP</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask">CONTACT</span></a></li>
       </ul>
     </div>
   </header>
