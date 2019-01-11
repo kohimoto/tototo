@@ -266,7 +266,15 @@ header .header-inner {
     header .header-inner h1 .header-logo {
       width: 100px;
       height: 40px;
-      fill: #240a26; }
+      fill: #240a26;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s; }
+      header .header-inner h1 .header-logo:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
 
 header .header-menu {
   position: absolute;
