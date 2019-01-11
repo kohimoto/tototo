@@ -40,7 +40,7 @@ include("./setting.php");
 
   <header id="masthead" class="site-header" role="banner">
     <div class="header-inner">
-      <h1><svg class="header-logo"><use xlink:href="#logo"></use></svg></h1>
+      <h1><a href="<?echo $SITE_URL;?>"><svg class="header-logo"><use xlink:href="#logo"></use></svg></a></h1>
       <ul class="header-menu">
         <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask">NEWS</span></a></li>
         <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask">ABOUT</span></a></li>
