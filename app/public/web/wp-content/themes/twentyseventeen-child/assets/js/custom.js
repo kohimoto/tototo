@@ -73,21 +73,20 @@ $(function(){
     });
 
   });
-  var timer = false;
-
+  //var timer = false;
   // ** header **//
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-      $('.site-header').addClass("dispNone");
-      if( timer !== false ){
-        clearTimeout( timer );
-      }
-      timer = setTimeout(function(){
-        $('.site-header').removeClass("dispNone");
-      },800 );
+      $('.site-header').addClass("small");
+      //if( timer !== false ){
+      //  clearTimeout( timer );
+      //}
+      //timer = setTimeout(function(){
+        //$('.site-header').removeClass("dispNone");
+      //},800 );
     } else {
-      $('.site-header').removeClass("dispNone");
+      $('.site-header').removeClass("small");
+      //$('.site-header').removeClass("dispNone");
     }
   });
 

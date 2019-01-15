@@ -20,15 +20,6 @@ get_header(); ?>
 <div class="wrap">
 	<div id="primary" class="content-area grid">
     <div class="grid-sizer"></div>
-    <?php
-    $categories = get_categories('parent=0');
-    //print_r($categories);
-    if(is_array($categories)) {
-    ?>
-    <?php
-    }
-    ?>
-
 			<?php
 			if ( have_posts() ) :
 $cnt = 0;

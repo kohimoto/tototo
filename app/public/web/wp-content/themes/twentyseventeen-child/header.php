@@ -40,12 +40,15 @@ include("./setting.php");
 
   <header id="masthead" class="site-header" role="banner">
     <div class="header-inner">
-      <h1><a href="<?echo $SITE_URL;?>"><svg class="header-logo"><use xlink:href="#logo"></use></svg></a></h1>
+      <ul class="header-sns">
+        <li><a href="https://www.instagram.com/tototo_inc/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <h1><a href="<?echo $SITE_URL;?>"><svg class="header-logo" id=><use xlink:href="#logo"></use></svg></a></h1>
       <ul class="header-menu">
-        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask">NEWS</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask">ABOUT</span></a></li>
-        <li><a href="https://to-to-to.stores.jp/"><span class="header-menu-list mask">SHOP</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask">CONTACT</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask angle">NEWS</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask angle">ABOUT</span></a></li>
+        <li><a href="https://to-to-to.stores.jp/"><span class="header-menu-list mask angle">SHOP</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask angle">CONTACT</span></a></li>
       </ul>
     </div>
   </header>
@@ -66,7 +69,7 @@ include("./setting.php");
       $cat_link = get_category_link($cat_v -> cat_ID);
       $cat_slug = $cat_v -> category_nicename;
       $add_class = "cate_".$cat_slug;
-      echo '<div class="cate-block '.$add_class.'"><h2><a href="' . $cat_link . '" class="'. $cat_slug.'"><span>'.$cat_v->name.'</span></a></h2>';
+      echo '<div class="cate-block '.$add_class.'"><h2 class="angle"><a href="' . $cat_link . '" class="'. $cat_slug.'"><span>'.$cat_v->name.'</span></a></h2>';
       $child_cat_num = count(get_term_children($cat_v->cat_ID,'category'));
       if($child_cat_num >= 0){
       echo '<ul class="cate_child">';
@@ -75,7 +78,7 @@ include("./setting.php");
       //子カテゴリの一覧取得
       $category_children = get_categories($category_children_args);
       //子カテゴリの数だけリスト出力
-      $cat_slug .= " cate_child_list mask";
+      $cat_slug .= " cate_child_list mask angle";
 
       $cat_child_slug = "";
       $parent_list = '<li><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></li>';
@@ -83,7 +86,7 @@ include("./setting.php");
       foreach($category_children as $child_val){
         $cat_child_link = get_category_link($child_val -> cat_ID);
         $cat_child_slug = $child_val -> category_nicename;
-        $cat_child_slug .= " cate_child_list mask";
+        $cat_child_slug .= " cate_child_list mask angle";
         echo '<li><a href="' . $cat_child_link . '" class="'. $cat_child_slug.'">' . $child_val -> name . '</a></li>';
       }
       echo '</ul>';

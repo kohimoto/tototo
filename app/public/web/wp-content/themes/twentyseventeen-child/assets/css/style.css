@@ -112,11 +112,14 @@ h3 {
 .svg_org {
   display: none; }
 
-.mask {
-  overflow: hidden;
+.angle {
   -webkit-transform: skewX(-13deg);
   -ms-transform: skewX(-13deg);
-  transform: skewX(-13deg); }
+  transform: skewX(-13deg);
+  /*-webkit-backface-visibility: hidden;*/ }
+
+.mask {
+  overflow: hidden; }
 
 .mask:after {
   top: 0;
@@ -133,18 +136,21 @@ h3 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #240a26;
   -webkit-transform: scaleX(0) translateX(0);
   -ms-transform: scaleX(0) translateX(0);
   transform: scaleX(0) translateX(0);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
-  z-index: 10; }
+  /*transform-origin:left;*/
+  -webkit-transform-origin: -1px;
+  -ms-transform-origin: -1px;
+  transform-origin: -1px;
+  z-index: 10;
+  /*-webkit-backface-visibility: hidden;*/ }
 
 .mask.is-show:after {
   -webkit-animation: openMask 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s alternate forwards, closeMask 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s alternate forwards;
-  animation: openMask 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s alternate forwards, closeMask 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s alternate forwards; }
+  animation: openMask 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s alternate forwards, closeMask 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s alternate forwards;
+  /*-webkit-backface-visibility: hidden;*/ }
 
 @-webkit-keyframes openMask {
   0% {
@@ -187,14 +193,15 @@ h3 {
   #loader-bg #loader-line {
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: #240a26;
     -webkit-animation: loading 3s ease 0s infinite;
     animation: loading 3s ease 0s infinite;
     position: relative;
     left: 0; }
   #loader-bg #loader .header-logo {
     fill: currentColor;
-    width: 400px;
+    fill: #240a26;
+    width: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -233,7 +240,7 @@ h3 {
   */ }
 
 /* =======================================================
-* header
+  * header
 * ======================================================= */
 header.site-header {
   position: fixed;
@@ -249,6 +256,21 @@ header.site-header {
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s; }
+  header.site-header.small .header-inner h1 .header-logo {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    height: 35px; }
+    header.site-header.small .header-inner h1 .header-logo:hover {
+      -webkit-transform: scale(1.2);
+      -o--transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+  header.site-header.small .header-inner .header-menu {
+    margin: 1.2rem 0; }
 
 header.dispNone {
   -webkit-transform: translateY(100%);
@@ -259,42 +281,48 @@ header .header-inner {
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  position: relative; }
+  /*position: relative;*/ }
   header .header-inner h1 {
     line-height: 0;
     margin: 0.8rem 0; }
     header .header-inner h1 .header-logo {
-      width: 100px;
-      height: 40px;
+      /*width: 100px;*/
+      height: 60px;
       fill: #240a26;
-      -webkit-transition: all 0.6s;
-      -o-transition: all 0.6s;
-      transition: all 0.6s; }
-      header .header-inner h1 .header-logo:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
 
 header .header-menu {
   position: absolute;
   right: 3rem;
-  top: 0;
-  margin: 1.2rem 0; }
+  /*top: 0;*/
+  margin: 1.2rem 0;
+  bottom: -18px; }
+
+header .header-sns {
+  position: absolute;
+  left: 3rem;
+  margin: 1.2rem 0;
+  bottom: -15px; }
+  header .header-sns li i {
+    font-size: 1.1rem; }
 
 header li {
   display: inline-block;
   list-style: none;
   padding: 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 0.90rem;
   line-height: 1; }
   header li a {
-    line-height: 1; }
+    line-height: 1;
+    color: #240a26; }
     header li a:hover {
       opacity: 1; }
     header li a span {
       line-height: 1;
-      padding: 5px 10px 0; }
+      padding: 5px 10px 0;
+      will-change: contents; }
 
 /* =======================================================
 * top
@@ -313,7 +341,7 @@ header li {
   .site-cate-list .cate-block h2 span, .site-cate-list .cate-block h3 span {
     line-height: 1;
     padding: 10px 20px 0px;
-    background-color: black; }
+    background-color: #240a26; }
   .site-cate-list .cate-block .cate_child {
     position: fixed;
     top: 0;
@@ -336,13 +364,14 @@ header li {
       font-size: 2rem;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      will-change: contents; }
       .site-cate-list .cate-block .cate_child li:hover {
         padding: 0.5rem; }
       .site-cate-list .cate-block .cate_child li a {
         margin: 0.5rem 2rem;
         padding: 10px 1rem 0;
-        color: #000;
+        color: #240a26;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
@@ -490,12 +519,14 @@ header li {
         word-break: break-all;
         margin: 0 0 1rem 0; }
         .single .site-content #primary.content-area .entry-header h2 span {
+          will-change: contents;
           padding: 10px 30px 2px;
-          background-color: black; }
+          background-color: #240a26; }
           .single .site-content #primary.content-area .entry-header h2 span.mask::after {
             background: #fff; }
       .single .site-content #primary.content-area .entry-header h3 span {
-        background-color: black; }
+        will-change: contents;
+        background-color: #240a26; }
         .single .site-content #primary.content-area .entry-header h3 span.mask::after {
           background: #fff; }
         .single .site-content #primary.content-area .entry-header h3 span a {
@@ -506,7 +537,7 @@ header li {
             content: '#';
             padding-right: 2px; }
   .single .site-content .next-post .inner-next {
-    background-color: #000;
+    background-color: #240a26;
     height: 340px;
     overflow: hidden;
     color: #fff; }
@@ -564,7 +595,7 @@ header li {
 * Fix page
 * ======================================================= */
 .page-template-default #page .wrap #primary h2 span, .page-template-default #page .wrap #primary h3 span {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(36, 10, 38, 0.8);
   padding: 10px 20px 0px; }
 
 .page-template-default #page .wrap #primary .entry-header {
@@ -578,7 +609,8 @@ header li {
     text-transform: inherit;
     margin-bottom: 0; }
     .page-template-default #page .wrap #primary .entry-header .entry-title span {
-      background-color: black; }
+      background-color: #240a26;
+      will-change: contents; }
       .page-template-default #page .wrap #primary .entry-header .entry-title span.mask::after {
         background: #fff; }
 
@@ -588,7 +620,8 @@ header li {
   .page-template-default #page .wrap #primary .entry-content .contact_txt_01 {
     padding-top: 2rem; }
   .page-template-default #page .wrap #primary .entry-content h3 span {
-    background-color: black; }
+    background-color: #240a26;
+    will-change: contents; }
     .page-template-default #page .wrap #primary .entry-content h3 span.mask::after {
       background: #fff; }
 

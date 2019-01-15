@@ -119,10 +119,14 @@ h3{
     display: none;
 }
 
-
+.angle {
+  -webkit-transform: skewX(-13deg);
+  -ms-transform: skewX(-13deg);
+  transform: skewX(-13deg);
+  /*-webkit-backface-visibility: hidden;*/
+}
 .mask {
   overflow:hidden;
-  transform: skewX(-13deg);
 }
 .mask:after{
   top:0;
@@ -139,14 +143,17 @@ h3{
   position:absolute;
   width:100%;
   height:100%;
-  background:#000;
+  background:rgb(36, 10, 38);
   transform:scaleX(0) translateX(0);
-  transform-origin:left;
+  /*transform-origin:left;*/
+  transform-origin: -1px;
   z-index:10;
+  /*-webkit-backface-visibility: hidden;*/
 }
 .mask.is-show:after{
   animation:openMask .5s cubic-bezier(.895,.03,.685,.22) 0s alternate forwards,
   closeMask .5s cubic-bezier(.165,.84,.44,1) .5s alternate forwards;
+  /*-webkit-backface-visibility: hidden;*/
 }
 @keyframes openMask
 {
@@ -174,7 +181,7 @@ h3{
   #loader-line {
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: #240a26;
     animation: loading 3s ease 0s infinite;
     position: relative;
     left: 0;
@@ -182,7 +189,8 @@ h3{
   #loader {
     .header-logo {
       fill: currentColor;
-      width: 400px;
+      fill: #240a26;
+      width: 150px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -212,7 +220,7 @@ h3{
   */
 }
 /* =======================================================
-* header
+  * header
 * ======================================================= */
 
 header {
@@ -230,6 +238,27 @@ header {
     -o-transition: transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
+    &.small {
+        .header-inner {
+          h1 {
+            .header-logo {
+              transform: scale(1.0);
+              -webkit-transition: all 0.4s;
+              -o-transition: all 0.4s;
+              transition: all 0.4s;
+              height: 35px;
+              &:hover {
+                -webkit-transform: scale(1.2);
+                -o--transform: scale(1.2);
+                transform: scale(1.2);
+              }
+            }
+          }
+          .header-menu {
+            margin: 1.2rem 0;
+          }
+        }
+    }
   }
   &.dispNone {
     -webkit-transform: translateY(100%);
@@ -240,47 +269,55 @@ header {
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
 
     h1 {
       line-height: 0;
       margin: 0.8rem 0;
       .header-logo {
-        width: 100px;
-        height: 40px;
+        /*width: 100px;*/
+        height: 60px;
         fill: #240a26;
-        -webkit-transition: all 0.6s;
-        -o-transition: all 0.6s;
-        transition: all 0.6s;
-        &:hover {
-          transform: scale(1.2);
-          -webkit-transform:scale(1.2);
-	        -ms-transform:scale(1.2);
-	        transform:scale(1.2);
-        }
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
       }
     }
   }
   .header-menu {
     position: absolute;
     right: 3rem;
-    top: 0;
+    /*top: 0;*/
     margin: 1.2rem 0;
+    bottom: -18px;
+  }
+  .header-sns {
+    position: absolute;
+    left: 3rem;
+    margin: 1.2rem 0;
+    bottom: -15px;
+    li {
+      i {
+        font-size: 1.1rem;
+      }
+    }
   }
   li {
     display: inline-block;
     list-style: none;
     padding: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.90rem;
     line-height: 1;
     a {
       line-height: 1;
+      color: #240a26;
       &:hover {
         opacity: 1;
       }
       span {
         line-height: 1;
         padding:5px 10px 0;
+        will-change: contents;
       }
     }
   }
@@ -311,7 +348,7 @@ header {
       span {
         line-height: 1;
         padding: 10px 20px 0px;
-        background-color: rgba(0, 0, 0, 1.0);
+        background-color: rgba(36, 10, 38, 1.0);
       }
     }
     .cate_child {
@@ -332,13 +369,14 @@ header {
       li {
           font-size: 2rem;
           transition: all 0.5s;
+          will-change: contents;
          &:hover {
            padding: 0.5rem;
          }
         a {
           margin: 0.5rem 2rem;
           padding: 10px 1rem 0;
-          color: #000;
+          color: rgb(36, 10, 38);
           transition: all 0.3s;
           line-height: 1;
           &:hover {
@@ -484,8 +522,9 @@ header {
             word-break: break-all;
             margin: 0 0 1rem 0;
             span {
+              will-change: contents;
               padding: 10px 30px 2px;
-              background-color: rgba(0, 0, 0, 1);
+              background-color: rgba(36, 10, 38, 1);
               &.mask::after {
                 background: #fff;
                 }
@@ -493,7 +532,8 @@ header {
           }
           h3{
             span{
-              background-color: rgba(0, 0, 0, 1);
+              will-change: contents;
+              background-color: rgba(36, 10, 38, 1);
               &.mask::after {
                 background: #fff;
                 }
@@ -514,7 +554,7 @@ header {
     }
     .next-post {
       .inner-next{
-        background-color: #000;
+        background-color: rgb(36, 10, 38);
         height: 340px;
         overflow: hidden;
         color: #fff;
@@ -612,7 +652,7 @@ header {
     .wrap {
       #primary {
         h2 span, h3 span {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(36, 10, 38, 0.8);
         padding: 10px 20px 0px;
         }
         .entry-header {
@@ -626,7 +666,8 @@ header {
             text-transform: inherit;
             margin-bottom: 0;
             span {
-              background-color: rgba(0, 0, 0, 1);
+              background-color: rgba(36, 10, 38, 1);
+              will-change: contents;
               &.mask::after {
                background: #fff;
              }
@@ -641,7 +682,8 @@ header {
           }
           h3 {
             span {
-              background-color: rgba(0, 0, 0, 1);
+              background-color: rgba(36, 10, 38, 1);
+              will-change: contents;
               &.mask::after {
                background: #fff;
              }
