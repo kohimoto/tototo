@@ -397,7 +397,7 @@ header li {
 .grid {
   overflow: hidden; }
   .grid .grid-item {
-    width: 12.5%;
+    width: 14.2857%;
     float: left;
     padding: 1%;
     margin-bottom: 0; }
@@ -413,9 +413,9 @@ header li {
         -ms-transform: scale(1.2, 1.2);
         transform: scale(1.2, 1.2); }
   .grid .grid-sizer {
-    width: 12.5%; }
+    width: 14.2857%; }
   .grid .grid-item.circle_big {
-    width: 25%; }
+    width: 28.5714%; }
   .grid .grid:after {
     content: '';
     display: block;
