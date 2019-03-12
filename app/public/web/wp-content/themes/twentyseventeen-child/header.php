@@ -77,24 +77,30 @@ include("./setting.php");
       echo '<div class="cate-block '.$add_class.'"><h2><a href="' . $cat_link . '" class="'. $cat_slug.'"><span></span></a></h2>';
       $child_cat_num = count(get_term_children($cat_v->cat_ID,'category'));
       if($child_cat_num >= 0){
+
       echo '<ul class="cate_child">';
       //子カテゴリの一覧取得条件
       $category_children_args = array('parent'=>$cat_v->cat_ID);
       //子カテゴリの一覧取得
       $category_children = get_categories($category_children_args);
       //子カテゴリの数だけリスト出力
-      $cat_slug .= " cate_child_list mask angle";
+      //$cat_slug .= " cate_child_list mask angle";
+      $cat_slug .= " cate_child_list list_head";
 
       $cat_child_slug = "";
-      $parent_list = '<li><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></li>';
+      //$parent_list = '<li><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></li>';
+      $parent_list = '<div><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></div>';
       echo $parent_list;
+      $cnt = 1;
       foreach($category_children as $child_val){
         $cat_child_link = get_category_link($child_val -> cat_ID);
         $cat_child_slug = $child_val -> category_nicename;
         $cat_child_slug .= " cate_child_list mask angle";
         echo '<li><a href="' . $cat_child_link . '" class="'. $cat_child_slug.'">' . $child_val -> name . '</a></li>';
+        $cnt++;
       }
       echo '</ul>';
+
     }
     ?>
     </div>
