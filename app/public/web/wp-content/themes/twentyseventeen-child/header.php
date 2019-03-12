@@ -27,6 +27,7 @@ include("./setting.php");
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <?php wp_head(); ?>
 <link href="https://fonts.googleapis.com/css?family=Khula:800&amp;subset=devanagari,latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:800i" rel="stylesheet">
 <script>
   (function(d) {
     var config = {
