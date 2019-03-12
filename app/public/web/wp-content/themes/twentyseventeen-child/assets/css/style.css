@@ -190,16 +190,16 @@ h3 {
   width: 100%;
   height: 100vh; }
   #loader-bg #loader-line {
+    /*
     width: 100vw;
     height: 100vh;
     background: #240a26;
-    -webkit-animation: loading 3s ease 0s infinite;
     animation: loading 3s ease 0s infinite;
     position: relative;
-    left: 0; }
+    left: 0;*/ }
   #loader-bg #loader .header-logo {
-    fill: currentColor;
-    /*fill: #240a26;*/
+    /*fill: currentColor;*/
+    fill: #240a26;
     width: 150px;
     position: absolute;
     top: 50%;
@@ -208,36 +208,22 @@ h3 {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+    /*filter: invert(100%);*/
     /*mix-blend-mode: difference;*/ }
 
-@-webkit-keyframes loading {
-  0% {
-    left: 0; }
-  50% {
-    left: 100%; }
-  100% {
-    left: 200%; }
-  /*
-  100% {
-    width: 100vw;
-  }
-  */ }
-
+/*
 @keyframes loading {
   0% {
-    left: 0; }
-  50% {
-    left: 100%; }
-  100% {
-    left: 200%; }
-  /*
-  100% {
-    width: 100vw;
+    left: 0;
   }
-  */ }
-
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+*/
 /* =======================================================
   * header
 * ======================================================= */
