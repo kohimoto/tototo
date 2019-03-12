@@ -14,6 +14,11 @@ include("./setting.php");
  * @version 1.0
  */
 
+
+ //今いるカテゴリページのカテゴリにcurrentクラスをふる
+ $current_cat = get_queried_object();
+ $current_cat_name = $current_cat->name;
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
@@ -45,10 +50,10 @@ include("./setting.php");
       </ul>
       <h1><a href="<?echo $SITE_URL;?>"><svg class="header-logo" id=><use xlink:href="#logo"></use></svg></a></h1>
       <ul class="header-menu">
-        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask angle">NEWS</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask angle">ABOUT</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask angle<?php if( is_category('news') ) echo ' current'; ?>">NEWS</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask angle<?php if( is_page('about') ) echo ' current'; ?>">ABOUT</span></a></li>
         <li><a href="https://to-to-to.stores.jp/"><span class="header-menu-list mask angle">SHOP</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask angle">CONTACT</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask angle<?php if( is_page('contact') ) echo ' current'; ?>">CONTACT</span></a></li>
       </ul>
     </div>
   </header>
@@ -65,11 +70,6 @@ include("./setting.php");
   ?>
   <div class="site-cate-list">
     <?php
-    //今いるカテゴリページのカテゴリにcurrentクラスをふる
-    $current_cat = get_queried_object();
-    $current_cat_name = $current_cat->name;
-
-
 
     foreach ($categories as $cat_k => $cat_v) {
       $cat_link = get_category_link($cat_v -> cat_ID);
