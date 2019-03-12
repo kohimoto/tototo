@@ -14,6 +14,9 @@ $(function(){
       },2500);
 
     });
+  // ** loading SVG animation  **//
+  var mySVG = $('.header-logo').drawsvg();
+      mySVG.drawsvg('animate');
 
 
   // ** grid  **//

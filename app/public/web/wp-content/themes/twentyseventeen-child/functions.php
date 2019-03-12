@@ -6,7 +6,7 @@ function theme_enqueue_scripts() {
   wp_enqueue_script( 'child-script-masonry', get_stylesheet_directory_uri() . '/assets/js/jquery.masonry.min.js' );
   wp_enqueue_script( 'child-script-infinitescroll', get_stylesheet_directory_uri() . '/assets/js/jquery.infinitescroll.min.js' );
   wp_enqueue_script( 'child-script-custom', get_stylesheet_directory_uri() . '/assets/js/custom.js' );
-//  wp_enqueue_script( 'child-script-custom-catelist', get_stylesheet_directory_uri() . '/assets/js/load.js' );
+  wp_enqueue_script( 'child-script-custom-drawsvg', get_stylesheet_directory_uri() . '/assets/js/jquery.drawsvg.min.js' );
   wp_enqueue_style('child-style', get_stylesheet_directory_uri() .'/assets/css/style.css', array('parent-style')
 );
 }
