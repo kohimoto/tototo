@@ -178,18 +178,10 @@ h3{
   width: 100%;
   height: 100vh;
   #loader-line {
-    /*
-    width: 100vw;
-    height: 100vh;
-    background: #240a26;
-    animation: loading 3s ease 0s infinite;
-    position: relative;
-    left: 0;*/
   }
   #loader {
     .header-logo {
-      /*fill: currentColor;*/
-      fill: #fff;
+      fill: none;
       width: 150px;
       position: absolute;
       top: 50%;
@@ -198,12 +190,40 @@ h3{
       -webkit-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
       text-align: center;
-      /*filter: invert(100%);*/
-      /*mix-blend-mode: difference;*/
       stroke: #240a26;
-      stroke-miterlimit: 10;
+      stroke-dasharray: 2000;/*線の間隔を指定する*/
+      stroke-dashoffset: 0;/*線の位置を指定する(IEは効かない属性)*/
+      stroke-width: 2;/*線の太さを指定する*/
+      -webkit-animation: hello 1s ease-in forwards;
+      animation: hello 1s ease-in forwards;
     }
   }
+}
+@-webkit-keyframes hello {
+0% {
+stroke-dashoffset: 2000;
+fill:transparent; /*透過*/
+}
+50% {
+fill:transparent; /*透過*/
+}
+100% {
+stroke-dashoffset: 0;
+fill:#333;
+}
+}
+@keyframes hello {
+0% {
+stroke-dashoffset: 2000;
+fill:transparent; /*透過*/
+}
+50% {
+fill:transparent; /*透過*/
+}
+100% {
+stroke-dashoffset: 0;
+fill:#333;
+}
 }
 /*
 @keyframes loading {
