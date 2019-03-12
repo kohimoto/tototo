@@ -50,10 +50,10 @@ include("./setting.php");
       </ul>
       <h1><a href="<?echo $SITE_URL;?>"><svg class="header-logo" id=><use xlink:href="#logo"></use></svg></a></h1>
       <ul class="header-menu">
-        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list mask angle<?php if( is_category('news') ) echo ' current'; ?>">NEWS</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list mask angle<?php if( is_page('about') ) echo ' current'; ?>">ABOUT</span></a></li>
-        <li><a href="https://to-to-to.stores.jp/"><span class="header-menu-list mask angle">SHOP</span></a></li>
-        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list mask angle<?php if( is_page('contact') ) echo ' current'; ?>">CONTACT</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>category/news"><span class="header-menu-list angle<?php if( is_category('news') ) echo ' current'; ?>">NEWS</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>about"><span class="header-menu-list angle<?php if( is_page('about') ) echo ' current'; ?>">ABOUT</span></a></li>
+        <li><a href="https://to-to-to.stores.jp/"><span class="header-menu-list angle">SHOP</span></a></li>
+        <li><a href="<?echo $SITE_URL;?>contact"><span class="header-menu-list angle<?php if( is_page('contact') ) echo ' current'; ?>">CONTACT</span></a></li>
       </ul>
     </div>
   </header>
