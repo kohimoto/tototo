@@ -12,8 +12,8 @@
 
 ?>
 	<header class="entry-header">
-      <?php the_title( '<h2 class="entry-title"><span class="mask angle entry-title-list">', '</span></h2>' ); ?>
-      <h3 class="entry-cate"><span class="mask angle entry-title-list"><?php the_category(' '); ?></span></h3>
+      <?php the_title( '<h2 class="entry-title"><span class="entry-title-list">', '</span></h2>' ); ?>
+      <h3 class="entry-cate font_os"><span class="entry-title-list"><?php the_category(' '); ?></span></h3>
 	</header><!-- .entry-header -->
   <div class="entry-detail-content">
     <?php

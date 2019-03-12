@@ -11,18 +11,19 @@
  */
 
 get_header(); ?>
-<?php
-$image = get_field('detail-top');
-if( !empty($image) ) {
-?>
-<div class="single-featured-image-header">
-  <img src="<?php echo $image['sizes']['twentyseventeen-featured-image']?>">
-</div>
-<?php
-}
-?>
+
 
 <div class="wrap">
+  <?php
+  $image = get_field('detail-top');
+  if( !empty($image) ) {
+  ?>
+  <div class="single-featured-image-header">
+    <img src="<?php echo $image['sizes']['twentyseventeen-featured-image']?>">
+  </div>
+  <?php
+  }
+  ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
