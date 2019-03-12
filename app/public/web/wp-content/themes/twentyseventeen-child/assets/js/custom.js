@@ -14,19 +14,6 @@ $(function(){
       },2500);
 
     });
-  // ** loading SVG animation  **//
-  var mySVG = $('.header-logo').drawsvg({
-  duration:1000,
-  stagger:100,
-  easing:'swing',
-  reverse:false,
-  callback: function() {
-     //コールバックの処理を記述
-     $("#s4u").fadeIn(5300);
-     $(".svg1").fadeTo(1100, 0);
-    }
-  });
-      mySVG.drawsvg('animate');
 
 
   // ** grid  **//
