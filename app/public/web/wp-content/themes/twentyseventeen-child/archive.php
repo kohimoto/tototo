@@ -10,12 +10,15 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header();
+$current_cat = get_queried_object();
+$current_cat_name = $current_cat->name;
+
+?>
 
 <div class="wrap">
-  <div id="primary" class="content-area grid">
-    <div class="grid-sizer"></div>
-
+  <div id="primary" class="content-area">
+    <h2 class="entry-title"><span class="mask angle entry-title-list is-show"><?=$current_cat_name?></span></h2>
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -33,7 +36,7 @@ get_header(); ?>
     		$the_query = new WP_Query( $args );
     		if ( $the_query->have_posts() ) :
     			while ( $the_query->have_posts() ) : $the_query->the_post();?>
-          <div class="post-thumbnail grid-item circle-disp <?php echo $add_class;?> <?php echo $check_cnt;?>">
+          <div class="post-thumbnail <?php echo $add_class;?> <?php echo $check_cnt;?>">
             <div class="item-content">
       				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
           </div>
@@ -43,15 +46,9 @@ get_header(); ?>
     		<?php wp_reset_postdata(); ?>
     	<?php endif;?>
     <?php endif;?>
-
-
-
-
 			<?php
-$cnt = 0;
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
-
       //$cntを引き継ぐため
       //get_template_part( 'template-parts/post/content', get_post_format() );
       include locate_template('template-parts/post/content.php');
