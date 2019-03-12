@@ -132,7 +132,7 @@ h3 {
     /*線の間隔を指定する*/
     stroke-dashoffset: 0;
     /*線の位置を指定する(IEは効かない属性)*/
-    stroke-width: 2;
+    stroke-width: 3;
     /*線の太さを指定する*/
     -webkit-animation: hello 1s ease-in forwards;
     animation: hello 1s ease-in forwards; }
@@ -147,7 +147,7 @@ h3 {
     /*透過*/ }
   100% {
     stroke-dashoffset: 0;
-    fill: #333; } }
+    fill: #240a26; } }
 
 @keyframes hello {
   0% {
@@ -159,7 +159,7 @@ h3 {
     /*透過*/ }
   100% {
     stroke-dashoffset: 0;
-    fill: #333; } }
+    fill: #240a26; } }
 
 /*
 @keyframes loading {
@@ -600,20 +600,23 @@ header li {
   padding: 3em 0; }
   .page-template-default .wpcf7 p {
     margin-bottom: 1.7em; }
-  .page-template-default .wpcf7 label span {
-    display: inline-block; }
-    .page-template-default .wpcf7 label span.left-block {
-      width: 23%;
-      vertical-align: top;
-      padding-top: 1.2em; }
-      .page-template-default .wpcf7 label span.left-block.last {
+  .page-template-default .wpcf7 label {
+    color: #240a26; }
+    .page-template-default .wpcf7 label span {
+      display: inline-block; }
+      .page-template-default .wpcf7 label span.left-block {
+        width: 23%;
         vertical-align: top;
-        padding-top: 2em; }
-  .page-template-default .wpcf7 label .wpcf7-form-control-wrap {
-    width: 77%; }
-    .page-template-default .wpcf7 label .wpcf7-form-control-wrap input {
-      padding: 1.2rem;
-      border: 2px solid #240a26; }
+        padding-top: 1.2em; }
+        .page-template-default .wpcf7 label span.left-block.last {
+          vertical-align: top;
+          padding-top: 2em; }
+    .page-template-default .wpcf7 label .wpcf7-form-control-wrap {
+      width: 77%; }
+      .page-template-default .wpcf7 label .wpcf7-form-control-wrap input, .page-template-default .wpcf7 label .wpcf7-form-control-wrap textarea {
+        padding: 1.2rem;
+        border: 2px solid #240a26;
+        border-radius: 0; }
   .page-template-default .wpcf7 .hissu {
     color: red; }
 
@@ -622,7 +625,8 @@ header li {
   .page-template-default .send input {
     width: 120px;
     height: 120px;
-    border-radius: 100%; }
+    border-radius: 100%;
+    background-color: #240a26; }
 
 .page-template-default div.wpcf7 .ajax-loader {
   display: block;

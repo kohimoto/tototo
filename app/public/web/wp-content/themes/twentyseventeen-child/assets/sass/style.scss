@@ -141,7 +141,7 @@ h3{
       stroke: #240a26;
       stroke-dasharray: 2000;/*線の間隔を指定する*/
       stroke-dashoffset: 0;/*線の位置を指定する(IEは効かない属性)*/
-      stroke-width: 2;/*線の太さを指定する*/
+      stroke-width: 3;/*線の太さを指定する*/
       -webkit-animation: hello 1s ease-in forwards;
       animation: hello 1s ease-in forwards;
     }
@@ -157,7 +157,7 @@ fill:transparent; /*透過*/
 }
 100% {
 stroke-dashoffset: 0;
-fill:#333;
+fill:#240a26;
 }
 }
 @keyframes hello {
@@ -170,7 +170,7 @@ fill:transparent; /*透過*/
 }
 100% {
 stroke-dashoffset: 0;
-fill:#333;
+fill:#240a26;
 }
 }
 /*
@@ -725,6 +725,7 @@ header {
       margin-bottom: 1.7em;
     }
     label {
+      color: #240a26;
       span {
         display: inline-block;
         &.left-block {
@@ -739,9 +740,10 @@ header {
       }
       .wpcf7-form-control-wrap {
         width: 77%;
-        input {
+        input, textarea {
           padding: 1.2rem;
           border: 2px solid #240a26;
+          border-radius: 0;
         }
       }
     }
@@ -755,6 +757,7 @@ header {
       width: 120px;
       height: 120px;
       border-radius: 100%;
+      background-color:#240a26;
     }
   }
   div.wpcf7 .ajax-loader {
