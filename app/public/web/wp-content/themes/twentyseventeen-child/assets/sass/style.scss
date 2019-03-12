@@ -189,7 +189,7 @@ h3{
   #loader {
     .header-logo {
       /*fill: currentColor;*/
-      fill: #240a26;
+      fill: #fff;
       width: 150px;
       position: absolute;
       top: 50%;
@@ -200,6 +200,8 @@ h3{
       text-align: center;
       /*filter: invert(100%);*/
       /*mix-blend-mode: difference;*/
+      stroke: #240a26;
+      stroke-miterlimit: 10;
     }
   }
 }
