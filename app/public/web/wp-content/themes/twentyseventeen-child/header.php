@@ -65,6 +65,12 @@ include("./setting.php");
   ?>
   <div class="site-cate-list">
     <?php
+    //今いるカテゴリページのカテゴリにcurrentクラスをふる
+    $current_cat = get_queried_object();
+    $current_cat_name = $current_cat->name;
+
+
+
     foreach ($categories as $cat_k => $cat_v) {
       $cat_link = get_category_link($cat_v -> cat_ID);
       $cat_slug = $cat_v -> category_nicename;
@@ -89,13 +95,17 @@ include("./setting.php");
 
       $cat_child_slug = "";
       //$parent_list = '<li><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></li>';
-      $parent_list = '<div><a href="' . $cat_link . '" class="'. $cat_slug.'">' . $cat_v-> name . '</a></div>';
+      $parent_list = '<div class="'. $cat_slug.'">' . $cat_v-> name . '</div>';
       echo $parent_list;
       $cnt = 1;
       foreach($category_children as $child_val){
         $cat_child_link = get_category_link($child_val -> cat_ID);
         $cat_child_slug = $child_val -> category_nicename;
+        if(strcasecmp($current_cat_name, $cat_child_slug) == 0) {
+          $cat_child_slug .= " current";
+        }
         $cat_child_slug .= " cate_child_list mask angle";
+
         echo '<li><a href="' . $cat_child_link . '" class="'. $cat_child_slug.'">' . $child_val -> name . '</a></li>';
         $cnt++;
       }
