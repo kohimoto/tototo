@@ -94,13 +94,13 @@ h2, h3 {
   font-weight: bold;
   margin: 0;
   font-size: 2rem;
-  color: #fff; }
+  /*color: #fff;*/
+  color: #210d24; }
   h2 a, h3 a {
     color: #fff;
     display: block;
     cursor: pointer; }
   h2 span, h3 span {
-    background-color: rgba(0, 0, 0, 0.8);
     padding: 16px 20px 6px; }
 
 h3 {

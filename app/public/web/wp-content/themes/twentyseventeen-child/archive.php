@@ -18,6 +18,7 @@ $current_cat_name = $current_cat->name;
 
 <div class="wrap">
   <div id="primary" class="content-area">
+    <main id="main">
     <h2 class="entry-title"><span class="mask angle entry-title-list is-show"><?=$current_cat_name?></span></h2>
 		<?php
 		if ( have_posts() ) : ?>
@@ -51,7 +52,7 @@ $current_cat_name = $current_cat->name;
 			while ( have_posts() ) : the_post();
       //$cntを引き継ぐため
       //get_template_part( 'template-parts/post/content', get_post_format() );
-      include locate_template('template-parts/post/content.php');
+      include locate_template('template-parts/post/content-archive.php');
 
 			endwhile;
 
