@@ -15,7 +15,6 @@ $current_cat = get_queried_object();
 $current_cat_name = $current_cat->name;
 
 ?>
-
 <div class="wrap">
   <div id="primary" class="content-area">
     <main id="main">

@@ -18,7 +18,6 @@ include("./setting.php");
  //今いるカテゴリページのカテゴリにcurrentクラスをふる
  $current_cat = get_queried_object();
  $current_cat_name = $current_cat->name;
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
