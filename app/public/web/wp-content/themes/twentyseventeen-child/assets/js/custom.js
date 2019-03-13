@@ -126,4 +126,15 @@ $(function(){
     }
   );
 
+  //$('.wpcf7-form-control').focus(function() {
+  //  $(this).val('');
+  //});
+
+$('.wpcf7-form-control').focus(focusEvent).blur(blurEvent);
+function focusEvent() {
+   $(this).val('');
+}
+function blurEvent() {
+$(this).css('color', '#240a26');
+}
 });
