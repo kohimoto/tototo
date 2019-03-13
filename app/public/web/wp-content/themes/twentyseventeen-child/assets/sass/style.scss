@@ -476,6 +476,14 @@ header {
     padding: 0;
   }
   .wrap {
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+    &.archive-news {
+      max-width: 1350px;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
     #primary {
       width: 100%;
       /*animation: home_wrap 10s linear infinite;*/
