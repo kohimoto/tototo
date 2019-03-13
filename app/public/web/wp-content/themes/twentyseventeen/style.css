@@ -630,9 +630,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	color: #ddd;
 	background: #fff;
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  font-family: Khula, kozuka-gothic-pro, sans-serif;
 	border: 1px solid #bbb;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
@@ -657,8 +658,11 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #222;
+	color: #240a26;
 	border-color: #333;
+}
+textarea {
+	color: #ddd;
 }
 
 select {
@@ -692,10 +696,10 @@ input[type="submit"] {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 800;
 	line-height: 1;
-	padding: 1em 2em;
+	padding: 1.8em 1.2em;
 	text-shadow: none;
 	-webkit-transition: background 0.2s;
 	transition: background 0.2s;
