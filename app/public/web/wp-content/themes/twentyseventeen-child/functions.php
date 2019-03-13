@@ -9,4 +9,12 @@ function theme_enqueue_scripts() {
   wp_enqueue_style('child-style', get_stylesheet_directory_uri() .'/assets/css/style.css', array('parent-style')
 );
 }
+/**
+  インクエリである かつ ホーム画面である場合に、newsカテゴリ除外
+**/
+add_action( 'pre_get_posts', 'modify_query_exclude_category' );
+function modify_query_exclude_category( $query ) {
+    if ( ! is_admin() && $query->is_main_query() && $query->is_home() )
+        $query->set( 'cat', '-2' );
+}
 ?>
