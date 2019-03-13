@@ -639,6 +639,29 @@ header li {
   display: none; }
 
 /* =======================================================
+* news
+* ======================================================= */
+.category-news .site-content {
+  padding: 4rem 0; }
+  .category-news .site-content .entry-title {
+    font-family: 'Open Sans', kozuka-gothic-pro, sans-serif;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #240a26;
+    margin-bottom: 3rem; }
+  .category-news .site-content .item-content {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #240a26;
+    margin-bottom: 3rem; }
+    .category-news .site-content .item-content .archive-date {
+      padding-bottom: 1rem; }
+    .category-news .site-content .item-content .entry-title-content {
+      font-size: 2rem;
+      line-height: 1.5;
+      padding-bottom: 1rem; }
+    .category-news .site-content .item-content .entry-detail-content img {
+      max-width: 600px; }
+
+/* =======================================================
 * Fix page
 * ======================================================= */
 .page-template-default #page .wrap #primary .entry-header {
