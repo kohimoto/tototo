@@ -39,7 +39,7 @@ $(function(){
   		itemSelector: '.grid-item',
       loading: {
   		  // Loading message
-  		  loadingText: '',
+  		  loadingText: ' ',
         // Finish message
         finishedMsg: ' ',
         donetext : ' '

@@ -16,7 +16,7 @@ include("./setting.php");
  //今いるカテゴリページのカテゴリにcurrentクラスをふる
  $current_cat = get_queried_object();
  $current_cat_name = $current_cat->name;
-
+ $category_nicename = $current_cat->category_nicename;
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
@@ -65,12 +65,12 @@ include("./setting.php");
 <!-- #masthead -->
 
   <?php
-  if ( (is_front_page() && is_home()) || is_category() ) {
+  if ( (is_front_page() && is_home()) || is_category() || is_single()) {
   ?>
   <?php
   $categories = get_categories('parent=0');
   //print_r($categories);
-  if(is_array($categories)) {
+  if(is_array($categories) && $category_nicename !== "news") {
   ?>
   <div class="site-cate-list">
     <?php
@@ -105,6 +105,8 @@ include("./setting.php");
       foreach($category_children as $child_val){
         if(strcasecmp($current_cat_name, $child_val->slug) == 0) {
           $cat_child_slug .= "current ";
+        } else {
+          $cat_child_slug = "";
         }
 
         $cat_child_link = get_category_link($child_val -> cat_ID);
