@@ -259,7 +259,31 @@ header li {
   line-height: 1; }
   header li a {
     line-height: 1;
-    color: #240a26; }
+    color: #240a26;
+    position: relative; }
+    header li a::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #000;
+      -webkit-transform: scale(0, 1);
+      -ms-transform: scale(0, 1);
+      transform: scale(0, 1);
+      -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+      transform-origin: left top;
+      -webkit-transition: -webkit-transform .3s;
+      transition: -webkit-transform .3s;
+      -o-transition: transform .3s;
+      transition: transform .3s;
+      transition: transform .3s, -webkit-transform .3s; }
+    header li a:hover::after {
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1); }
     header li a:hover {
       opacity: 1; }
     header li a span {
@@ -268,7 +292,7 @@ header li {
       will-change: contents; }
       header li a span.current {
         border-bottom: 2px solid #000;
-        padding-bottom: 5px; }
+        padding-bottom: 2px; }
 
 /* =======================================================
 * top
@@ -329,14 +353,13 @@ header li {
           -o-transition: all 0.3s;
           transition: all 0.3s;
           line-height: 1;
-          position: relative;
-          display: inline-block; }
+          position: relative; }
           .site-cate-list .cate-block .cate_child li a:hover {
-            letter-spacing: 0.5rem;
+            letter-spacing: 0.2rem;
             font-size: 2.2rem; }
           .site-cate-list .cate-block .cate_child li a::after {
             position: absolute;
-            bottom: 0px;
+            bottom: -2px;
             left: 0;
             content: '';
             width: 100%;
@@ -681,7 +704,8 @@ header li {
     color: red; }
 
 .page-template-default .send {
-  text-align: center; }
+  text-align: center;
+  padding-top: 3rem; }
   .page-template-default .send input {
     width: 120px;
     height: 120px;
