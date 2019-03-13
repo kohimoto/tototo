@@ -2969,8 +2969,8 @@ p > object:only-child {
 
 	.wrap {
 		max-width: 1350px;
-		padding-left: 3em;
-		padding-right: 3em;
+		padding-left: 6em;
+		padding-right: 6em;
 	}
 
 	.has-sidebar:not(.error404) #primary {

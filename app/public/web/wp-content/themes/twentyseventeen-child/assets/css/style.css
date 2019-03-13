@@ -552,75 +552,52 @@ header li {
 /* =======================================================
 * single
 * ======================================================= */
-.single .site-content .single-featured-image-header {
-  background-color: transparent;
-  border-bottom: none;
-  padding-bottom: 4em; }
-  .single .site-content .single-featured-image-header img {
-    width: 100%; }
-
-.single .site-content #primary.content-area {
-  width: 100%;
-  padding-bottom: 7rem; }
-  .single .site-content #primary.content-area .entry-header {
+.single .site-content {
+  padding: 2em 0 0; }
+  .single .site-content .single-featured-image-header {
+    background-color: transparent;
+    border-bottom: none;
     padding-bottom: 4em; }
-    .single .site-content #primary.content-area .entry-header h2 {
-      word-break: break-all;
-      margin: 0 0 1rem 0;
-      color: #240a26;
-      font-size: 3rem;
-      line-height: 1.5; }
-    .single .site-content #primary.content-area .entry-header h3 {
-      color: #240a26; }
-      .single .site-content #primary.content-area .entry-header h3 span a {
-        padding-right: 2rem;
-        font-size: 1.2rem; }
-        .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
-          padding: 0; }
-        .single .site-content #primary.content-area .entry-header h3 span a::before {
-          content: '#';
-          padding-right: 2px; }
-
-.single .site-content .next-post {
-  padding-bottom: 68px; }
-  .single .site-content .next-post .inner-next {
-    background-color: #240a26;
-    height: 340px;
-    overflow: hidden;
-    color: #fff; }
-    .single .site-content .next-post .inner-next .inner-ttl {
-      float: left;
-      width: 50%;
-      position: relative;
-      display: block;
-      height: 340px; }
-      .single .site-content .next-post .inner-next .inner-ttl.mask::after {
-        background: #fff; }
-      .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt {
-        position: absolute;
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        padding: 0 10rem; }
-        .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt p:first-of-type {
-          padding-bottom: 1rem; }
-        .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt svg {
-          fill: #fff;
-          stroke-width: 1px;
-          stroke: #fff;
-          width: 100px; }
-    .single .site-content .next-post .inner-next .inner-img {
-      float: left;
-      width: 50%; }
-      .single .site-content .next-post .inner-next .inner-img .next-link {
+    .single .site-content .single-featured-image-header img {
+      width: 100%; }
+  .single .site-content #primary.content-area {
+    width: 100%;
+    padding-bottom: 7rem; }
+    .single .site-content #primary.content-area .entry-header {
+      padding-bottom: 4em; }
+      .single .site-content #primary.content-area .entry-header h2 {
+        word-break: break-all;
+        margin: 0 0 1rem 0;
+        color: #240a26;
+        font-size: 2rem;
+        line-height: 1.5; }
+      .single .site-content #primary.content-area .entry-header h3 {
+        color: #240a26; }
+        .single .site-content #primary.content-area .entry-header h3 span a {
+          padding-right: 2rem;
+          font-size: 1.2rem; }
+          .single .site-content #primary.content-area .entry-header h3 span a:first-of-type {
+            padding: 0; }
+          .single .site-content #primary.content-area .entry-header h3 span a::before {
+            content: '#';
+            padding-right: 2px; }
+  .single .site-content .next-post {
+    padding-bottom: 68px; }
+    .single .site-content .next-post .inner-next {
+      background-color: #240a26;
+      height: 340px;
+      overflow: hidden;
+      color: #fff; }
+      .single .site-content .next-post .inner-next .inner-ttl {
+        float: left;
+        width: 50%;
         position: relative;
         display: block;
         height: 340px; }
-        .single .site-content .next-post .inner-next .inner-img .next-link img {
+        .single .site-content .next-post .inner-next .inner-ttl.mask::after {
+          background: #fff; }
+        .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt {
+          position: absolute;
           width: 100%;
           position: absolute;
           top: 50%;
@@ -628,12 +605,35 @@ header li {
           -ms-transform: translate(-50%, -50%);
           -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          opacity: 0.5;
-          -webkit-transition: all 0.5s;
-          -o-transition: all 0.5s;
-          transition: all 0.5s; }
-  .single .site-content .next-post:hover .inner-next .inner-img .next-link img {
-    opacity: 1; }
+          padding: 0 10rem; }
+          .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt p:first-of-type {
+            padding-bottom: 1rem; }
+          .single .site-content .next-post .inner-next .inner-ttl .inner-ttl-txt svg {
+            fill: #fff;
+            stroke-width: 1px;
+            stroke: #fff;
+            width: 100px; }
+      .single .site-content .next-post .inner-next .inner-img {
+        float: left;
+        width: 50%; }
+        .single .site-content .next-post .inner-next .inner-img .next-link {
+          position: relative;
+          display: block;
+          height: 340px; }
+          .single .site-content .next-post .inner-next .inner-img .next-link img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+    .single .site-content .next-post:hover .inner-next .inner-img .next-link img {
+      opacity: 1; }
 
 .single footer {
   display: none; }

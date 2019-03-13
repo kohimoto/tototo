@@ -603,6 +603,7 @@ header {
 * ======================================================= */
 .single {
   .site-content {
+    padding: 2em 0 0;
     .single-featured-image-header {
       background-color: transparent;
       border-bottom: none;
@@ -621,7 +622,7 @@ header {
             word-break: break-all;
             margin: 0 0 1rem 0;
             color: #240a26;
-            font-size: 3rem;
+            font-size: 2rem;
             line-height: 1.5;
             span {
             }
