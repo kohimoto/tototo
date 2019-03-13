@@ -76,13 +76,20 @@ html {
 body,
 button,
 input,
-select,
-textarea {
+select {
   font-family: Khula, kozuka-gothic-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.05rem;
   color: #240a26;
+  font-size: 20px;
+  line-height: 1.8; }
+
+textarea {
+  font-family: Khula, kozuka-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
   font-size: 20px;
   line-height: 1.8; }
 
@@ -205,7 +212,7 @@ header.site-header {
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
   header.site-header.small .header-inner .header-menu {
-    margin: 1.2rem 0; }
+    margin: 1.5rem 0; }
 
 header.dispNone {
   -webkit-transform: translateY(100%);
@@ -232,7 +239,7 @@ header .header-menu {
   position: absolute;
   right: 3rem;
   /*top: 0;*/
-  margin: 1.2rem 0;
+  margin: 1.5rem 0;
   bottom: -18px; }
 
 header .header-sns {
@@ -247,7 +254,7 @@ header li {
   font-family: 'Open Sans', kozuka-gothic-pro, sans-serif;
   display: inline-block;
   list-style: none;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   font-size: 0.90rem;
   line-height: 1; }
   header li a {
@@ -257,8 +264,11 @@ header li {
       opacity: 1; }
     header li a span {
       line-height: 1;
-      padding: 5px 10px 0;
+      /*padding:0 10px;*/
       will-change: contents; }
+      header li a span.current {
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px; }
 
 /* =======================================================
 * top
@@ -352,6 +362,8 @@ header li {
         -webkit-transform: scale(1.1, 1.1);
         -ms-transform: scale(1.1, 1.1);
         transform: scale(1.1, 1.1); }
+  .grid .circle_no_1 {
+    pointer-events: none; }
   .grid .grid-sizer {
     width: 14.2857%; }
   .grid .grid-item.circle_big {
@@ -627,8 +639,7 @@ header li {
         vertical-align: top;
         padding-top: 1.2em; }
         .page-template-default .wpcf7 label span.left-block.last {
-          vertical-align: top;
-          padding-top: 2em; }
+          vertical-align: top; }
     .page-template-default .wpcf7 label .wpcf7-form-control-wrap {
       width: 77%; }
       .page-template-default .wpcf7 label .wpcf7-form-control-wrap input, .page-template-default .wpcf7 label .wpcf7-form-control-wrap textarea {

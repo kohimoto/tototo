@@ -77,13 +77,21 @@ html{
 body,
 button,
 input,
-select,
-textarea {
+select
+{
   font-family: Khula, kozuka-gothic-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.05rem;
   color: #240a26;
+  font-size: 20px;
+  line-height: 1.8;
+}
+textarea {
+  font-family: Khula, kozuka-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
   font-size: 20px;
   line-height: 1.8;
 }
@@ -222,7 +230,7 @@ header {
             }
           }
           .header-menu {
-            margin: 1.2rem 0;
+            margin: 1.5rem 0;
           }
         }
     }
@@ -255,7 +263,7 @@ header {
     position: absolute;
     right: 3rem;
     /*top: 0;*/
-    margin: 1.2rem 0;
+    margin: 1.5rem 0;
     bottom: -18px;
   }
   .header-sns {
@@ -273,7 +281,7 @@ header {
     font-family: 'Open Sans', kozuka-gothic-pro, sans-serif;
     display: inline-block;
     list-style: none;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     font-size: 0.90rem;
     line-height: 1;
     a {
@@ -284,8 +292,12 @@ header {
       }
       span {
         line-height: 1;
-        padding:5px 10px 0;
+        /*padding:0 10px;*/
         will-change: contents;
+        &.current {
+          border-bottom: 2px solid #000;
+          padding-bottom: 5px;
+        }
       }
     }
   }
@@ -386,6 +398,9 @@ header {
          transform: scale(1.1, 1.1);
        }
      }
+  }
+  .circle_no_1 {
+    pointer-events: none;
   }
   .grid-sizer {
     width: 14.2857%;
@@ -749,7 +764,6 @@ header {
           padding-top: 1.2em;
           &.last {
             vertical-align: top;
-            padding-top: 2em;
           }
         }
       }
