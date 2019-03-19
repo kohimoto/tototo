@@ -14,6 +14,19 @@ $(function(){
       },2500);
 
     });
+    $('.archive-news').infinitescroll({
+      navSelector  : '.navigation',
+      nextSelector : '.navigation .next',
+      itemSelector : '.item-content',
+      loading: {
+        // Loading message
+        loadingText: ' ',
+        // Finish message
+        finishedMsg: ' ',
+        donetext : ' '
+      }
+
+    });
 
 
   // ** grid  **//
